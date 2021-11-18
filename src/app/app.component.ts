@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'GammingWebsite';
+  sidebarOpen = true;
+  toggle(){
+    this.sidebarOpen = !this.sidebarOpen;
+  }
+  close(){
+    this.sidebarOpen = !this.sidebarOpen;
+  }
 }

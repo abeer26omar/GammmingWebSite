@@ -1,0 +1,15 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+mat-drawer{
+    width: 100%;
+    background-color: #0f172a;
+}
+mat-drawer-container{
+    height: 100%;
+    background-image: url('../assets/images/body-bg.webp') !important;
+    background-size: cover;
+    background-color: #0f172a;
+}

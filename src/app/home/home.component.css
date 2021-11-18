@@ -1,0 +1,757 @@
+.hero-banner {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 940px;
+    position: relative;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .hero-banner {
+      height: 820px;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero-banner {
+      height: 780px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-banner {
+      height: 670px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .hero-banner {
+      height: 600px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .hero-banner {
+      height: 570px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-banner.mb-130 {
+      margin-bottom: 72px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .hero-banner.mb-130 {
+      margin-bottom: 56px;
+    }
+  }
+.hero-content {
+    padding-top: 78px;
+    position: relative;
+    z-index: 9;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-content {
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-content {
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 28px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .hero-content {
+    padding-top: 152px;
+  }
+}
+.hero-content h1 {
+  margin-bottom: 41px;
+  font-family: 'Metal Mania', cursive;
+  text-shadow: 3px 3px 0px #b154f0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .hero-content h1 {
+    font-size: 95px;
+    line-height: 98px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-content h1 {
+    margin-bottom: 33px;
+    font-size: 88px;
+    line-height: 88px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-content h1 {
+    margin-bottom: 21px;
+    font-size: 75px;
+    line-height: 78px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-content h1 {
+    margin-bottom: 15px;
+    font-size: 52px;
+    line-height: 55px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .hero-content h1 {
+    margin-bottom: 13px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+.hero-content p {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 47px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-content p {
+    font-size: 23px;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-content p {
+    font-size: 22px;
+    margin-bottom: 31px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .hero-content p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    line-height: 28px;
+  }
+}
+.btn.btn-link{
+  background-image: url('../../assets/images/btn-bg.webp');
+}
+.btn.btn-link img {
+  margin-left: 0.5rem;
+}
+.btn.btn-link:hover {
+  opacity: 0.8;
+}
+.btn.btn-link:hover img{
+  margin-left: 1.25rem;
+} 
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  right: 55px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-img {
+    right: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-img {
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-img {
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .hero-img {
+    width: 650px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-img img {
+    width: 620px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-img img {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-img img {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title.mb-60 {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-title.mb-60 {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title.mb-70 {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-title.mb-70 {
+    margin-bottom: 35px;
+  }
+}
+.section-title h2 {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .section-title h2 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .section-title h2 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-title h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .section-title h2 {
+    font-size: 23px;
+    line-height: 32px;
+  }
+}
+.gamming-inner .row {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .gamming-inner .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gamming-inner .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gamming-inner .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gamming-inner .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+@media only screen and (max-width: 767px){
+
+  .gamming-inner .row {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+}
+.gamming-inner .col-lg-4 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gamming-inner .col-lg-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gamming-inner .col-lg-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gamming-inner .col-lg-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.single-gamming-world {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding: 55px 40px 50px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-gamming-world {
+    padding: 54px 25px 45px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-gamming-world {
+    padding: 30px 20px 35px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .single-gamming-world {
+    padding: 30px 20px 28px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .single-gamming-world {
+    margin-bottom: 20px;
+  }
+}
+
+.gamming-world-thumb {
+  margin-bottom: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gamming-world-thumb {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gamming-world-thumb {
+    margin-bottom: 25px;
+  }
+}
+.gamming-world-text h3 {
+  margin-bottom: 17px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gamming-world-text h3 {
+    font-size: 23px;
+    line-height: 38px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gamming-world-text h3 {
+    margin-bottom: 13px;
+    font-size: 18px;
+    line-height: 38px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gamming-world-text h3 {
+    margin-bottom: 11px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gaming-world-text p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gamming-world-text p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+.title h2 {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .title h2 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .title h2 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .title h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .title h2 {
+    font-size: 23px;
+    line-height: 32px;
+  }
+}
+.title h2 span {
+  color: #b154f0;
+}
+.title p {
+  font-size: 18px;
+  line-height: 35px;
+  margin-top: 12px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .title p {
+    font-size: 17px;
+    line-height: 32px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .title p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title p {
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .title p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+/*****************upComming matches**********************/
+.upComming-list {
+  border: 4px solid #281e4d;
+  background: #09002a;
+  padding: 32px 65px;
+  border-radius: 38px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .upComming-list{
+    padding: 32px 35px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .upComming-list {
+    padding: 28px 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .upComming-list{
+    padding: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+.upComming-text {
+  width: 42%;
+}
+@media only screen and (max-width: 767px) {
+  .upComming-text {
+    width: 100%;
+  }
+}
+.upComming-text p {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .upComming-text p {
+    margin-bottom: 13px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .upComming-text p {
+    margin-bottom: 13px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .upComming-text p {
+    margin-bottom: 11px;
+    font-size: 14px;
+  }
+}
+.upComming-text h3 {
+  font-size: 35px;
+  margin-bottom: 11px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .upComming-text h3 {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .upComming-text h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .upComming-text h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .upComming-text h3 {
+    font-size: 19px;
+    margin-bottom: 7px;
+    line-height: 21px;
+  }
+}
+.upComming-text h3 a:hover {
+  color: #b154f0;
+}
+.upComming-text span {
+  font-size: 14px;
+  color: #b154f0;
+}
+.upComming-play{
+  margin: 0 35px;
+  width: 12%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .upComming-play {
+    width: 13%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .upComming-play {
+    margin: 0 30px;
+    width: 16%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .upComming-play {
+    margin: 20px 0 15px;
+    width: 100%;
+  }
+}
+.video-popup {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #b154f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff !important;
+  position: relative;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .video-popup {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .video-popup {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+  }
+}
+
+.upComming-play span {
+  font-size: 14px;
+  line-height: 35px;
+  color: #ffa700;
+  margin-top: 8px;
+}
+.upComming-thumb {
+  width: 33%;
+}
+@media only screen and (max-width: 767px) {
+  .upComming-thumb {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.single_upcoming_thumb {
+  margin-right: 35px;
+}
+.single_upcoming_thumb:last-child {
+  margin-right: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_upcoming_thumb {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .single_upcoming_thumb {
+    margin-right: 25px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single_upcoming_thumb img {
+    width: 80px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_upcoming_thumb img {
+    width: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .single_upcoming_thumb img {
+    width: 70px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .single_upcoming_thumb img {
+    width: 60px;
+  }
+}
+.others_match_btn {
+  margin-top: 70px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .others_match_btn {
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .others_match_btn {
+    margin-top: 32px;
+  }
+}
+.gaming-update-inner {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 300px;
+  padding: 0 100px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gaming-update-inner {
+    padding: 0 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gaming-update-inner {
+    padding: 0 30px;
+    height: 263px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gaming-update-inner {
+    padding: 0 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .gaming-update-inner {
+    height: 260px;
+  }
+}
+.gaming-update-text h2 {
+  margin-bottom: 0;
+
+    font-size: 55px;
+    line-height: 72px;
+    font-weight: 700;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gaming-update-text h2 {
+    font-size: 48px;
+    line-height: 62px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gaming-update-text h2 {
+    font-size: 38px;
+    line-height: 55px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gaming-update-text h2 {
+    font-size: 30px;
+    line-height: 47px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .gaming-update-text h2 {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+.gaming-update-btn {
+  margin-left: 40px;
+}
+.gaming-update-btn .btn.btn-link {
+  font-size: 19px;
+  padding: 0 10px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gaming-update-btn .btn.btn-link {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gaming-update-btn .btn.btn-link {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gaming-update-btn {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gaming-update-btn {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+}

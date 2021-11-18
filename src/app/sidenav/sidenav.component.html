@@ -1,0 +1,25 @@
+<mat-nav-list>
+    <div class="logo py-4 d-flex align-items-center justify-content-center">
+        <a routerLink=''>
+            <img src="../../assets/images/logo.webp" alt="Logo" >
+        </a>
+    </div>
+    <a class="close" (click)="closeNav()"><mat-icon>close</mat-icon></a>
+    <mat-divider></mat-divider>
+    <h2 matSubheader class="mt-2 mb-2">APPLICATIONS</h2>
+    <a mat-list-item routerLink='/home' routerLinkActive='list-item-active'>
+        <mat-icon>home</mat-icon><span>home</span>
+    </a>
+    <a mat-list-item routerLink='/home' routerLinkActive='list-item-active'>
+        <mat-icon>match</mat-icon><span>match</span>
+    </a>
+    <a mat-list-item routerLink='' routerLinkActive='list-item-active'>
+        <mat-icon>pages</mat-icon><span>pages</span>
+    </a>
+    <a mat-list-item routerLink='' routerLinkActive='list-item-active'>
+        <mat-icon>blog</mat-icon><span>blog</span>
+    </a>
+    <a mat-list-item routerLink='' routerLinkActive='list-item-active'>
+        <mat-icon>contact_mail</mat-icon><span>contact</span>
+    </a>
+</mat-nav-list>

@@ -1,0 +1,115 @@
+mat-toolbar{
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    background-color: transparent;
+}
+.stickey{
+    position: sticky;
+    top: 0;
+    height: 100px;
+    z-index: 999;
+    background-color: #281e4d;
+}
+ul li{
+    list-style: none;
+}
+button{
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.mat-menu-content{
+    width: 160px;
+}
+button.menu-btn{
+    display: none !important;
+    color: whitesmoke !important;
+    font-size: 1.5rem;
+}
+@media(max-width: 910.5px){
+    button.menu-btn{
+       display: inline-block !important;
+   }
+   .main-header .sing-up ,.main-menu{
+    display: none !important;
+}
+}
+.main-header {
+    padding: 1.43rem 0;
+}
+.main-menu {
+    padding: 0 1.87rem;
+}
+.main-menu nav > ul > li {
+    margin-right: 3.56rem;
+    position: relative;
+}
+
+.main-menu nav > ul > li:last-child {
+    margin-right: 0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .main-menu nav > ul > li {
+      margin-right: 2.81rem;
+    }
+  }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .main-menu nav > ul > li {
+      margin-right: 3.56rem;
+    }
+}
+.main-menu nav > ul > li a {
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.87rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.main-menu nav > ul > li:hover > a {
+    color: #ffffff;
+}
+
+.main-menu nav > ul > li > a::before {
+    position: absolute;
+    content: "";
+    background: url("../../assets/images/menu_shape.webp");
+    left: 50%;
+    top: 50%;
+    width: 5.87rem;
+    height: 2.75rem;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.main-menu nav > ul > li:hover > a::before {
+    opacity: 1;
+    visibility: visible;
+}
+.sign-up-btn .btn.btn-link {
+    background: url('../../assets/images/btn-signup.webp') !important;
+    font-size: 1rem;
+    width: 9.81rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+}
+.sign-up-btn .btn.btn-link img {
+    margin-left: 0.5rem;
+}
+.btn.btn-link:hover {
+    opacity: 0.8;
+}
+.sign-up-btn .btn.btn-link:hover img{
+    margin-left: 1.25rem;
+} 
+.navbar-toggler{
+    
+    border: 1px solid black;
+    outline: none;
+}
