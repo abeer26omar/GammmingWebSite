@@ -1,0 +1,519 @@
+.breadcrumb-bg {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 502px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .breadcrumb-bg {
+      height: 440px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .breadcrumb-bg {
+      height: 390px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .breadcrumb-bg {
+      height: 340px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .breadcrumb-bg {
+      height: 420px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .breadcrumb-bg.mb-140 {
+      margin-bottom: 80px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .breadcrumb-bg.mb-140 {
+      margin-bottom: 60px;
+    }
+  }
+  .title {
+    padding-top: 65px;
+  }
+  @media only screen and (max-width: 575px) {
+    .title {
+      padding-top: 162px;
+    }
+  }
+  .title h1{
+    font-size: 90px;
+    line-height: 90px;
+    font-family: "Metal Mania", cursive;
+    text-shadow: 3px 3px 0px #b154f0;
+    margin-bottom: 25px;
+  }
+ 
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .title h1 {
+      font-size: 72px;
+      line-height: 75px;
+      margin-bottom: 22px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .title h1 {
+      font-size: 62px;
+      line-height: 65px;
+      margin-bottom: 16px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .title h1 {
+      font-size: 55px;
+      line-height: 60px;
+      margin-bottom: 18px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .title h1 {
+      font-size: 42px;
+      line-height: 48px;
+      margin-bottom: 16px;
+    }
+  }
+  .breadcrumbs ol li {
+    font-size: 17px;
+    font-weight: bold;
+    color: #b154f0;
+    text-transform: uppercase;
+    margin-right: 8px;
+  }
+  @media only screen and (max-width: 767px) {
+    .breadcrumbs ol li {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+  .breadcrumbs ol li:last-child {
+    margin-right: 0;
+  }
+  .breadcrumbs ol li a {
+    color: #ffffff;
+  }
+  .breadcrumbs ol li a:hover {
+    color: #b154f0;
+  }
+  @media only screen and (max-width: 575px) {
+    .details-content {
+      text-align: center;
+    }
+  }
+  .details-content.top {
+    margin-bottom: 52px;
+  }
+  @media only screen and (max-width: 767px) {
+    .details-content.top {
+      margin-bottom: 30px;
+    }
+  }
+  .details-content > span {
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 600;
+    color: #b154f0;
+    margin-bottom: 24px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .details-content > span {
+      margin-bottom: 20px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .details-content > span {
+      font-size: 16px;
+      line-height: 25px;
+      margin-bottom: 19px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .details-content > span {
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 14px;
+    }
+  }
+  .details-content h2.game-details-title {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 28px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .details-content h2.game-details-title {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .details-content h2.game-details-title {
+      font-size: 33px;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .details-content h2.game-details-title {
+      font-size: 28px;
+      line-height: 33px;
+      margin-bottom: 22px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .details-content h2.game-details-title {
+      font-size: 21px;
+      line-height: 31px;
+      margin-bottom: 20px;
+    }
+  }
+  .details-content h2 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 23px;
+  }
+  .details-content h2.color2 {
+    color: #b154f0;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .details-content h2 {
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .details-content h2 {
+      font-size: 28px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .details-content h2 {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+  }
+  .game-details-desc p {
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+  .game-details-desc p:last-child {
+    margin-bottom: 0;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .game-details-desc p {
+      line-height: 30px;
+      font-size: 15px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .game-details-desc p {
+      line-height: 28px;
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
+  }
+
+  .game-additional-info {
+    background: #16073a;
+    padding: 44px 65px;
+    border-radius: 10px;
+    margin-bottom: 44px;
+  }
+  .metacritic{
+    background: #16073a;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .game-additional-info {
+      padding: 44px 52px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .game-additional-info {
+      padding: 35px 26px;
+      margin-bottom: 36px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .game-additional-info {
+      padding: 30px 25px 5px;
+      margin-bottom: 28px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .game-additional-info {
+      padding: 30px 12px 5px;
+    }
+  }
+
+  .game-additional-info > h3.add-info-title {
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 33px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .game-additional-info > h3.add-info-title {
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .game-additional-info > h3.add-info-title {
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 30px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .game-additional-info > h3.add-info-title {
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 25px;
+    }
+  }
+  
+  .add-info-text:last-child {
+    margin-right: 0;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .add-info-text {
+      margin-right: 65px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .add-info-text {
+      margin-right: 38px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .add-info-text {
+      margin-right: 0;
+      width: 50%;
+      margin-bottom: 25px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .add-info-text {
+      width: 100%;
+      margin-bottom: 21px;
+    }
+  }
+  .add-info-text h4 {
+    font-size: 16px;
+    line-height: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #b154f0;
+    margin-bottom: 6px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .add-info-text h4 {
+      font-size: 15px;
+      line-height: 32px;
+      margin-bottom: 6px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .add-info-text h4 {
+      line-height: 32px;
+      margin-bottom: 3px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .add-info-text h4 {
+      font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 3px;
+    }
+  }
+  .add-info-text span {
+    color: #c7c7c7;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .add-info-text span {
+      font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .add-info-text span {
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+  
+  .up{
+    margin-right: 1rem;
+  }
+  .up .votes-up{
+    color: #5ee432;
+  }
+  .votes-count{
+    margin-left: .3rem;
+    vertical-align: super;
+
+  }
+  .down .votes-down{
+    color: #ef4655;
+  }
+  mwl-gauge {
+    width: 150px;
+    height: 150px;
+    display: block;
+    padding: 10px;
+  }
+  mwl-gauge > .gauge > .dial {
+    stroke: #eee;
+    stroke-width: 2;
+    fill: rgba(0, 0, 0, 0);
+  }
+  mwl-gauge > .gauge > .value {
+    stroke: rgb(47, 227, 255);
+    stroke-width: 2;
+    fill: rgba(0, 0, 0, 0);
+  }
+  mwl-gauge > .gauge > .value-text {
+    fill: rgb(47, 227, 255);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  .single-counterup {
+    margin-right: 85px;
+    padding-right: 85px;
+    position: relative;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single-counterup {
+      margin-right: 55px;
+      padding-right: 55px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-counterup {
+      margin-right: 33px;
+      padding-right: 40px;
+    }
+  } 
+   @media only screen and (max-width: 767px) {
+    .single-counterup {
+      width: 46%;
+      margin-bottom: 30px;
+      margin-right: 30px;
+      padding-right: 62px;
+    }
+    .single-counterup:nth-child(2) {
+      margin-right: 0;
+      padding-right: 0;
+    }
+    .single-counterup:nth-child(2)::before {
+      display: none;
+    }
+  } 
+  @media only screen and (max-width: 479px) {
+    .single-counterup {
+      width: 100%;
+      margin-right: 0;
+      padding-right: 0;
+    }
+    .single-counterup::before {
+      display: none;
+    }
+  }
+  
+  .single-counterup:last-child::before {
+    display: none;
+  }
+  .single-counterup::before {
+    position: absolute;
+    content: "/ /";
+    right: 0;
+    top: 50%;
+    font-size: 14px;
+    -webkit-transform: translatey(-50%);
+            transform: translatey(-50%);
+    color: #33cb33;
+    font-weight: bold;
+  }
+  .counterup-text {
+    text-align: center;
+  }
+  .counterup-text h2 {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 400;
+    font-family: "Metal Mania", cursive;
+    margin-bottom: 9px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .counterup-text h2 {
+      font-size: 73px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .counterup-text h2 {
+      font-size: 60px;
+      line-height: 62px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .counterup-text h2 {
+      font-size: 45px;
+      line-height: 50px;
+    }
+  }
+  .counterup-text h2.color1 {
+    color: #ffb300;
+  }
+  .counterup-text h2.color2 {
+    color: #1de3eb;
+  }
+  .counterup-text h2.color3 {
+    color: #df4c21;
+  }
+  .counterup-text h2.color4 {
+    color: #b154f0;
+  }
+  .counterup-text span {
+    font-size: 18px;
+    line-height: 35px;
+    color: #f3f3f3;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .counterup-text span {
+      font-size: 15px;
+      line-height: 30px;
+    }
+    .three, 
+    .four{
+      margin-top: 2rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .counterup-text span {
+      font-size: 15px;
+      line-height: 30px;
+    }
+    .one, .two,  .three, 
+    .four{
+      margin-top: 2rem;
+
+    }
+  }
+  

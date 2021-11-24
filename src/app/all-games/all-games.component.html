@@ -1,0 +1,69 @@
+<div class="breadcrumb-area breadcrumb-bg mb-140" style="background-image: url('../../assets/images/breadcrumbs-bg.webp');">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title text-center">
+                    <h1>All bonx game</h1>  
+                    <breadcrumb #parent class="breadcrumbs">
+                        <ol class="breadcrumb d-flex justify-content-center">
+                            <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+                            <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs">
+                                <li *ngIf="!route.terminal" class="breadcrumb-item">
+                                    <a routerLink="[route.url]">{{route.displayName}}</a>
+                                </li>
+                                <li *ngIf="route.terminal" class="breadcrumb-item active">
+                                    {{route.displayName}}
+                                </li>
+                            </ng-template>
+                        </ol>
+                    </breadcrumb>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="gammes-wrapper mb-125">
+    <div class="container">
+                <div class="row mb-70 justify-content-between">
+                    <div class="col-lg-3 col-md-4 col-sm-4 select">
+                        <div class="filters">
+                            <select class="form-select" aria-label="Default select example" [(ngModel)]="sort" 
+                            (change)="searchGames(sort)">
+                            <option selected value="Select Category">Select Categorey</option>
+                            <option value="name">name</option>
+                            <option value="-released">Released</option>
+                            <option value="-added">Added</option>
+                            <option value="-created">Created</option>
+                            <option value="-updated">Updated</option>
+                            <option value="-rating">Rating</option>
+                            <option value="-metacritic">Metacritic</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 search">
+                        <form class="d-flex" #form="ngForm" (ngSubmit)="onSubmit()">
+                            <input class="form-control" type="search" name="search" 
+                            placeholder="Search" aria-label="Search" [(ngModel)]="searchText">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            <div class="games-inner">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6" *ngFor="let game of games | search: searchText">
+                        <div class="gaming-thumb">
+                            <a href="#">
+                                <img *ngIf="game.background_image" 
+                                style="height:100%!important;width:100%!important;" src="{{game.background_image}}" alt="">
+                                <p *ngIf="!game.background_image" style="color: #b154f0;">No Image For Game</p>
+                            </a>
+                            <div class="gaming-details-btn">
+                                <a (click)="gameDetails(game.id)">Game Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+<app-footer></app-footer>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { PopUpVideoComponent } from './pop-up-video/pop-up-video.component';
 @Component({
   selector: 'app-home',
@@ -7,8 +8,8 @@ import { PopUpVideoComponent } from './pop-up-video/pop-up-video.component';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor(private dialog: MatDialog) { }
+  signIn: boolean = false;
+  constructor(private dialog: MatDialog, private router: Router ) { }
 
   ngOnInit(): void {
   }
@@ -17,5 +18,13 @@ export class HomeComponent implements OnInit {
       height:'500px',
       width: '700px',
     });
+  }
+  play(){
+    if(this.signIn === true){
+      this.router.navigate(['/games']);
+    }
+    else{
+      this.router.navigate(['/signup'])
+    }
   }
 }

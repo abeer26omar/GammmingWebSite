@@ -3,7 +3,7 @@
       <app-sidenav (closeSideNav)="close()"></app-sidenav>
     </mat-drawer>
     <mat-drawer-content>
-      <app-header (toggleSideBar)= "toggle()"></app-header>
+      <app-header (toggleSideBar)= "toggle()" *ngIf="router.url !== '/signup' && router.url !== '/signin'"></app-header>
       <router-outlet></router-outlet>
     </mat-drawer-content>
   </mat-drawer-container>

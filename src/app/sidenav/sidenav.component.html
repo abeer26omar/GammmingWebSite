@@ -7,14 +7,14 @@
     <a class="close" (click)="closeNav()"><mat-icon>close</mat-icon></a>
     <mat-divider></mat-divider>
     <h2 matSubheader class="mt-2 mb-2">APPLICATIONS</h2>
-    <a mat-list-item routerLink='/home' routerLinkActive='list-item-active'>
+    <a mat-list-item (click)="home()" routerLinkActive='list-item-active'>
         <mat-icon>home</mat-icon><span>home</span>
     </a>
-    <a mat-list-item routerLink='/home' routerLinkActive='list-item-active'>
+    <a mat-list-item routerLink='' routerLinkActive='list-item-active'>
         <mat-icon>match</mat-icon><span>match</span>
     </a>
-    <a mat-list-item routerLink='' routerLinkActive='list-item-active'>
-        <mat-icon>pages</mat-icon><span>pages</span>
+    <a mat-list-item (click)="games()" routerLinkActive='list-item-active'>
+        <mat-icon>pages</mat-icon><span>games</span>
     </a>
     <a mat-list-item routerLink='' routerLinkActive='list-item-active'>
         <mat-icon>blog</mat-icon><span>blog</span>

@@ -1,0 +1,84 @@
+section.error_section {
+    padding: 12.5rem 0 ;
+}
+.error_title {
+    margin-bottom: 64px;
+}
+@media only screen and (max-width: 767px) {
+    .error_title {
+      margin-bottom: 34px;
+    }
+  }
+.error_title h3 {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .error_title h3 {
+      font-size: 50px;
+      line-height: 52px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .error_title h3 {
+      font-size: 38px;
+      line-height: 40px;
+      margin-bottom: 18px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .error_title h3 {
+      font-size: 34px;
+      line-height: 35px;
+      margin-bottom: 15px;
+    }
+  }
+  .error_title p {
+    font-size: 35px;
+    line-height: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .error_title p {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .error_title p {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .error_title p {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+  .error__404 {
+    margin-bottom: 70px;
+  }
+  @media only screen and (max-width: 767px) {
+    .error__404 {
+      margin-bottom: 40px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .error__404 img {
+      max-width: 550px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .error__404 img {
+      max-width: 400px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .error__404 img {
+      max-width: 270px;
+    }
+  }
+  
