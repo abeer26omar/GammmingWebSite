@@ -1,7 +1,7 @@
 .main-footer-inner {
     margin-bottom: 122px;
   }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (min-width: 768px) and (max-width: 991.5px) {
     .main-footer-inner {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -11,7 +11,7 @@
       margin-bottom: 21px;
     }
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767.5px) {
     .main-footer-inner {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -29,7 +29,7 @@
   .footer-logo {
     margin-bottom: 36px;
   }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (min-width: 768px) and (max-width: 991.5px) {
     .footer-logo {
       margin-bottom: 22px;
     }
@@ -48,7 +48,7 @@
       margin-right: 35px;
     }
   }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (min-width: 768px) and (max-width: 991.5px) {
     .footer-widget-list{
       width: 45%;
       margin-right: 40px;
@@ -58,7 +58,7 @@
       margin-right: 0;
     }
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767.5px) {
     .footer-widget-list {
       width: 45%;
       margin-right: 40px;
@@ -88,12 +88,12 @@
   .footer-contact-desc {
     margin-bottom: 33px;
   }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (min-width: 768px) and (max-width: 991.5px) {
     .footer-contact-desc {
       margin-bottom: 20px;
     }
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767.5px) {
     .footer-contact-desc {
       margin-bottom: 22px;
     }
@@ -104,7 +104,7 @@
   .footer-contact-desc p a {
     color: #b154f0;
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767.5px) {
     .footer-contact-desc p {
       font-size: 15px;
       line-height: 25px;
@@ -161,13 +161,13 @@
       font-size: 20px;
     }
   }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (min-width: 768px) and (max-width: 991.5px) {
     .footer-widget-list > h3 {
       margin-bottom: 18px;
       font-size: 22px;
     }
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767.5px) {
     .footer-widget-list > h3 {
       margin-bottom: 27px;
       font-size: 19px;
@@ -227,7 +227,7 @@
       min-width: 65px;
     }
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767.5px) {
     .footer-winners-thumb img {
       min-width: 65px;
     }
@@ -249,7 +249,7 @@
   .footer-menu ul li a:hover {
     color: #b154f0;
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767.5px) {
     .footer-menu ul li a {
       line-height: 38px;
     }
@@ -258,7 +258,7 @@
     padding: 20px 0;
     background: #140e38;
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767.5px) {
     .footer-bottom {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
@@ -269,7 +269,7 @@
   .footer-bottom-inner {
     position: relative;
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767.5px) {
     .footer-bottom-inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -277,7 +277,7 @@
               flex-direction: column;
     }
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767.5px) {
     .footer-bottom-inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -286,7 +286,7 @@
       text-align: center;
     }
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767.5px) {
     .copyright-right {
       margin-bottom: 12px;
     }
@@ -302,7 +302,7 @@
     font-weight: 500;
     text-transform: uppercase;
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767.5px) {
     .copyright-right p {
       line-height: 25px;
     }
@@ -327,7 +327,7 @@
     -webkit-transform: translatex(-50%);
             transform: translatex(-50%);
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767.5px) {
     .scroll-top-icon {
       position: inherit;
       left: inherit;
@@ -369,3 +369,7 @@
     color: #b154f0;
   }
        
+  .show-scrollTop {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+   }

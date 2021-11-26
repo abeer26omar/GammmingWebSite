@@ -1,27 +1,29 @@
-<div class="breadcrumb-area breadcrumb-bg mb-140" style="background-image: url('../../../assets/images/breadcrumbs-bg.webp');">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="title text-center">
-                    <h1>{{game.name}}</h1>  
-                    <breadcrumb #parent class="breadcrumbs">
-                        <ol class="breadcrumb d-flex justify-content-center">
-                            <li class="breadcrumb-item"><a routerLink="/games">All Games</a></li>
-                            <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs">
-                                <li *ngIf="!route.terminal" class="breadcrumb-item">
-                                    <a routerLink="[route.url]">{{route.displayName}}</a>
-                                </li>
-                                <li *ngIf="route.terminal" class="breadcrumb-item active">
-                                    {{route.displayName}}
-                                </li>
-                            </ng-template>
-                        </ol>
-                    </breadcrumb>
+<section>
+    <div class="breadcrumb-area breadcrumb-bg mb-140" style="background-image: url('../../../assets/images/breadcrumbs-bg.webp');">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title text-center">
+                        <h1>{{game.name}}</h1>  
+                        <breadcrumb #parent class="breadcrumbs">
+                            <ol class="breadcrumb d-flex justify-content-center">
+                                <li class="breadcrumb-item"><a routerLink="/games">All Games</a></li>
+                                <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs">
+                                    <li *ngIf="!route.terminal" class="breadcrumb-item">
+                                        <a routerLink="[route.url]">{{route.displayName}}</a>
+                                    </li>
+                                    <li *ngIf="route.terminal" class="breadcrumb-item active">
+                                        {{route.displayName}}
+                                    </li>
+                                </ng-template>
+                            </ol>
+                        </breadcrumb>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 <section class="game-details mb-70">
     <div class="container">
         <div class="row">
@@ -46,6 +48,7 @@
                                 <p >{{game.description_raw}}</p>
                             </div>
                             <div class="screenShots-inner mt-5">
+                                <p class="text-center" *ngIf="game.screenShots?.length == 0">No ScreenShots For This Game</p>
                                  <owl-carousel-o [options]="screenShots" *ngIf="game.screenShots?.length">
                                     <ng-template carouselSlide *ngFor="let screenshot of game.screenShots">
                                         <img src="{{screenshot.image}}" style="height:300px; width: 100%;" alt="screenshot">
@@ -56,58 +59,42 @@
                                 <h3 class="add-info-title">Additional Information:</h3>
                                 <div class="game-add-inner">
                                     <div class="row">
-                                        <div class="col-lg-2 add-info-text">
+                                        <div class="col-lg-2  add-info-text">
                                             <h4>Released:</h4>
-                                            <span>{{game.released}}</span>
+                                            <span *ngIf="game.released">{{game.released}}</span>
+                                            <span *ngIf="!game.released">No data</span>
                                         </div>
-                                        <div class="col-lg-2 add-info-text">
+                                        <div class="col-lg-2  add-info-text">
                                             <h4>Platforms:</h4>
+                                            <span class="text-center" *ngIf="game.parent_platforms?.length == 0">No Data</span>
                                             <span *ngFor="let platform of game.parent_platforms; let last = last">
                                                 {{platform.platform.name}} <span *ngIf="!last">,</span></span>
                                         </div>
                                         <div class="col-lg-2 add-info-text">
                                             <h4>Puplishers:</h4>
+                                            <span class="text-center" *ngIf="game.publishers?.length == 0">No Data</span>
                                             <span *ngFor="let puplisher of game.publishers; let last = last">
                                                 {{puplisher.name}} <span *ngIf="!last">,</span></span>  
+                                            
                                         </div>
-                                        <div class="col-lg-2 add-info-text">
+                                        <div class="col-lg-6  add-info-text">
                                             <h4>Game WebSite:</h4>
-                                            <span><a href="{{game.website}}" target="_blank">{{game.website}}</a></span>
+                                            <span *ngIf="game.website == ''">No data</span>
+                                            <span class="font-s"><a href="{{game.website}}" target="_blank">{{game.website}}</a></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                     </div>
-                    <!-- <div class="metacritic d-flex justify-content-center align-items-center">
-                        <div class="row">
-                            <div class="col-12"> 
-                            <mwl-gauge 
-                                [max]="100" 
-                                [dialStartAngle]="180"
-                                [dialEndAngle]="0"
-                                [value]="game.metacritic"
-                                [animated]="true"
-                                [animationDuration]="1">
-                            </mwl-gauge>
-                        </div>
-                            <div class="col-12">
-                                <span>
-                                <a href="{{ game.metacritic_url }}" target="_blank" style="color: white;">metacritic</a>
-                                </span>
-                            </div>
-                        </div>
-                    </div> -->
                     
                     <div class="trailers-inner mt-5">
                         <h3 class="text-center py-3" style="font-size: 1.5rem;">Game Trailers</h3>
                         <p class="text-center" *ngIf="game.trailers?.length == 0">No Trailers for This Game</p>
                         <owl-carousel-o [options]="trailers" *ngIf="game.trailers?.length">
                             <ng-template carouselSlide *ngFor="let trailer of game.trailers">
-                                <!-- <img src="{{trailer.data}}" style="height:300px; width: 100%;" alt="screenshot"> -->
-                                <!-- <p>{{trailer.data.max}}</p> -->
+                            
                                 <video width="100%" height="100%" controls>
                                     <source src="{{trailer.data.max}}" type="video/mp4">
-                                    <!-- <source src="movie.ogg" type="video/ogg"> -->
                                     Your browser does not support the video tag.
                                 </video>
                             </ng-template>                                         
@@ -118,31 +105,31 @@
         </div>
     </div>
 </section>
-<section class="counterup-section mb-70 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s" 
+<section class="counterup-section mb-125 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s" 
 style="visibility: visible; animation-duration: 1.1s; animation-delay: 0.1s; animation-name: fadeInUp;">
     <div class="container">
         <div class="row">
                     <div class="col-lg-3 col-md-6  one">
                         <div class="counterup-text">
-                            <h2 class="counterup color1">{{game.twitch_count}}</h2>
+                            <h2 class="counterup color1">{{game.twitch_count || 0}}</h2>
                             <span>TWITCH STREAMS</span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6  two">
                         <div class="counterup-text">
-                            <h2 class="counterup color2">{{game.game_series_count}}</h2>
+                            <h2 class="counterup color2">{{game.game_series_count || 0}}</h2>
                             <span>GAME Series</span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6  three">
                         <div class="counterup-text">
-                            <h2 class="counterup color3">{{game.reviews_count}}</h2>
+                            <h2 class="counterup color3">{{game.reviews_count || 0}}</h2>
                             <span>Reviews</span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6  four">
                         <div class="counterup-text">
-                            <h2 class="counterup color4">{{game.metacritic}}</h2>
+                            <h2 class="counterup color4">{{game.metacritic || 0}}</h2>
                             <span>Metacritic</span>
                         </div>
                     </div>

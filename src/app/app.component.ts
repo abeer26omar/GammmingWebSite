@@ -17,6 +17,8 @@ export class AppComponent {
     this.sidebarOpen = !this.sidebarOpen;
   }
   constructor( public router: Router){
-   
+  }
+  onActive(){
+    window.scroll(0,0)
   }
 }

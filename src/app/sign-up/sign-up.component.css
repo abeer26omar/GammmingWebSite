@@ -4,6 +4,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.bg-set{
+    background: hsla(205, 46%, 30%, 1);
+    /* background: linear-gradient(90deg,hsla(205, 46%, 30%, 1) 0%, hsla(205, 46%, 21%, 1) 100%); */
+    background: linear-gradient(90deg,hsla(0, 0%, 0%, 1) 0%, hsla(205, 46%, 21%, 1) 100%);
+
+}
 .py-55{
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -19,4 +25,14 @@ a:hover{
 }
 h3{
     font-size: 2rem;
+}
+
+input.ng-invalid.ng-touched{
+    border: 2px red solid;
+    box-shadow: 1px 1px 1px red;
+
+}
+input.ng-valid.ng-touched{
+    border: 2px green solid;
+    box-shadow: 2px 2px 2px green;
 }

@@ -113,3 +113,19 @@ button.menu-btn{
     border: 1px solid black;
     outline: none;
 }
+.profile img{
+    border-radius: 50%;
+}
+.profile a{
+    color: #ffffff;
+    font-size: 1rem;
+}
+.profile a i{
+    margin-left: 0.3rem;
+}
+.profile a:hover {
+    color: #b154f0;
+}
+.display{
+    display: none;
+}

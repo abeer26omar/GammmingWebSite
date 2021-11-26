@@ -21,9 +21,15 @@
                                </nav>
                         </div>
                         <div class="sing-up d-flex align-items-end">
-                            <div class="sign-up-btn">
-                                <a class="btn btn-link" routerLink="/signup">
-                                    sign up <img class="arrow" src="../../assets/images/arrrow-icon1.webp" alt="">
+                            <div class="sign-up-btn" [ngClass]="{'display': logged}">
+                                <a class="btn btn-link" (click)="signUp()">
+                                    sign In <img class="arrow" src="../../assets/images/arrrow-icon1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="profile" [ngClass]="{'display': !logged}">
+                                <a href=""><img src="../../assets/images/winners1.webp" alt=""></a>
+                                <a class="btn" (click)="logOut()">
+                                 <i class="fas fa-sign-out-alt"></i>
                                 </a>
                             </div>
                         </div>

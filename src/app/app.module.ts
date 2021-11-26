@@ -27,6 +27,7 @@ import { BreadcrumbModule } from 'angular-crumbs';
 import { FormsModule } from '@angular/forms';
 import { GaugeModule } from 'angular-gauge';
 import { SearchPipe } from './search.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 //components
@@ -67,7 +68,8 @@ import { PlayersComponent } from './players/players.component';
     NotFoundComponent,
     SignUpComponent,
     SigninComponent,
-    PlayersComponent
+    PlayersComponent,
+    
 
   ],
   imports: [
@@ -93,6 +95,7 @@ import { PlayersComponent } from './players/players.component';
     FormsModule,
     HttpClientModule,
     GaugeModule.forRoot(),
+    ReactiveFormsModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

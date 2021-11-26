@@ -39,12 +39,12 @@ export class AllGamesComponent implements OnInit{
     .getGameList(sort, search)
     .subscribe((gameList: APIResponse<Game>)=>{
       this.games = gameList.results;
-      console.log(gameList.count);
-      console.log(gameList.results.length);
+      console.log(gameList);
+      // console.log(gameList.results.length);
     })
   }
   onSubmit(){
-console.log(this.searchText)
+// console.log(this.searchText)
   }
 
   gameDetails(id: number){

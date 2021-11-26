@@ -230,7 +230,7 @@
 
   .game-additional-info {
     background: #16073a;
-    padding: 44px 65px;
+    padding: 2rem 2rem;
     border-radius: 10px;
     margin-bottom: 44px;
   }
@@ -240,28 +240,28 @@
     width: 300px;
     height: 300px;
   }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .game-additional-info {
       padding: 44px 52px;
     }
-  }
+  } */
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .game-additional-info {
-      padding: 35px 26px;
+      /* padding: 35px 26px; */
       margin-bottom: 36px;
     }
   }
   @media only screen and (max-width: 767px) {
     .game-additional-info {
-      padding: 30px 25px 5px;
+      /* padding: 30px 25px 5px; */
       margin-bottom: 28px;
     }
   }
-  @media only screen and (max-width: 575px) {
+  /* @media only screen and (max-width: 575px) {
     .game-additional-info {
       padding: 30px 12px 5px;
     }
-  }
+  } */
 
   .game-additional-info > h3.add-info-title {
     font-size: 22px;
@@ -292,11 +292,11 @@
   .add-info-text:last-child {
     margin-right: 0;
   }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .add-info-text {
       margin-right: 65px;
     }
-  }
+  } */
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .add-info-text {
       margin-right: 38px;
@@ -305,7 +305,7 @@
   @media only screen and (max-width: 767px) {
     .add-info-text {
       margin-right: 0;
-      width: 50%;
+      /* width: 50%; */
       margin-bottom: 25px;
     }
   }
@@ -338,7 +338,7 @@
   }
   @media only screen and (max-width: 575px) {
     .add-info-text h4 {
-      font-size: 15px;
+      font-size: 1rem;
       line-height: 28px;
       margin-bottom: 3px;
     }
@@ -348,13 +348,16 @@
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .add-info-text span {
-      font-size: 14px;
+      font-size: 1rem;
     }
   }
   @media only screen and (max-width: 575px) {
     .add-info-text span {
-      font-size: 14px;
+      font-size: 1rem;
       line-height: 25px;
+    }
+    .add-info-text span.font-s{
+      font-size: 0.6rem;
     }
   }
   

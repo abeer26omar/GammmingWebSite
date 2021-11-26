@@ -102,7 +102,7 @@ export class GameDetailsComponent implements OnInit {
     this.gameSub = this.httpService.getDetails(id)
     .subscribe((gameResp: Game)=>{
       this.game = gameResp;
-      console.log(gameResp);
+      // console.log(gameResp);
     })
   }
   ngOnDestory() :void{
