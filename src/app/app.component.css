@@ -11,5 +11,6 @@ mat-drawer-container{
     height: 100%;
     background-image: url('../assets/images/body-bg.webp') !important;
     background-size: cover;
+    /* background-position: center; */
     background-color: #0f172a;
 }

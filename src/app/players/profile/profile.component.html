@@ -1,0 +1,67 @@
+<div class="breadcrumb-area breadcrumb-bg mb-140" style="background-image: url('../../assets/images/breadcrumbs-bg.webp');">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="s-title text-center">
+                    <h1>Player Profile</h1>  
+                    <breadcrumb #parent class="breadcrumbs">
+                        <ol class="breadcrumb d-flex justify-content-center">
+                            <li class="breadcrumb-item"><a routerLink="/players">players</a></li>
+                            <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs">
+                                <li *ngIf="!route.terminal" class="breadcrumb-item">
+                                    <a routerLink="[route.url]">{{route.displayName}}</a>
+                                </li>
+                                <li *ngIf="route.terminal" class="breadcrumb-item active">
+                                    {{route.displayName}}
+                                </li>
+                            </ng-template>
+                        </ol>
+                    </breadcrumb>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="player-details mb-125">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="single-player-details">
+                    <div class="left-side">
+                        <div class="image">
+                            <img class="img-fluid" src="../../../assets/images/player-details-img.webp" alt="">
+                        </div>
+                        <div class="player-profile">
+                            <h4 class="title">LION KING</h4>
+                            <h5 class="level-text">36 LEVEL COMPLETED</h5>
+                            <div class="content-shape-img">
+                                <img width="351" height="126" src="../../../assets/images/tam-text-shape2.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="social-link">
+                            <a href="https://www.twitch.tv" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a> 
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a> 
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> 
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="content">
+                            <span class="title-tag">PLAYER PROFILE</span>
+                                <h4 class="title">Space Game expert</h4>
+                                <p>It is a long established fact that a reader will be distracted
+                                    readable content page when looking at it layout the point using
+                                    lorem Ipsum that it has more-or-less normal distribution lette
+                                    desktop packages and web page now editors.</p>
+                                <p>It is a long established fact that and reader will been distracted
+                                    readable content page when looking at it layout the point using
+                                    desktop packages and web page now editors.</p>
+                                
+                                <a class="btn btn-link" href="">Contact Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

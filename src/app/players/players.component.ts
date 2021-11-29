@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./players.component.css']
 })
 export class PlayersComponent implements OnInit {
-
+  playersValue = "Bonx Players"
   constructor() { }
 
   ngOnInit(): void {

@@ -1,1 +1,167 @@
-<p>players works!</p>
+<div class="breadcrumb-area breadcrumb-bg mb-140" style="background-image: url('../../assets/images/breadcrumbs-bg.webp');">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="s-title text-center">
+                    <h1>Bonx players</h1>  
+                    <breadcrumb #parent class="breadcrumbs">
+                        <ol class="breadcrumb d-flex justify-content-center">
+                            <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+                            <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs">
+                                <li *ngIf="!route.terminal" class="breadcrumb-item">
+                                    <a routerLink="[route.url]">{{route.displayName}}</a>
+                                </li>
+                                <li *ngIf="route.terminal" class="breadcrumb-item active">
+                                    {{route.displayName}}
+                                </li>
+                            </ng-template>
+                        </ol>
+                    </breadcrumb>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="players-list mb-125">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mb-50">
+                <div class="player-inner">
+                    <div class="top">
+                        <a class="image"><img src="../../assets/images/player-1.webp" alt=""></a>
+                            <div class="overlay">
+                                <div class="social-link">
+                                    <a href="https://www.twitch.tv" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a> 
+                                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a> 
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> 
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a> 
+                                </div>
+                            </div>
+                    </div>
+                    <div class="content">
+                        <h4 class="title"><a routerLink="/profile">THUNDERMAN</a></h4>
+                        <h5 class="level-text">40 LEVEL COMPLETED</h5>
+
+                        <div class="content-shape-img">
+                            <img width="351" height="126" src="../../assets/images/tam-text-shape.webp" alt="">
+                            <img width="351" height="126" src="../../assets/images/tam-text-shape2.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-50">
+                <div class="player-inner">
+                    <div class="top">
+                        <a class="image"><img src="../../assets/images/player-1.webp" alt=""></a>
+                            <div class="overlay">
+                                <div class="social-link">
+                                    <a href="https://www.twitch.tv" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a> 
+                                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a> 
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> 
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a> 
+                                </div>
+                            </div>
+                    </div>
+                    <div class="content">
+                        <h4 class="title"><a  routerLink="/profile">THUNDERMAN</a></h4>
+                        <h5 class="level-text">40 LEVEL COMPLETED</h5>
+
+                        <div class="content-shape-img">
+                            <img width="351" height="126" src="../../assets/images/tam-text-shape.webp" alt="">
+                            <img width="351" height="126" src="../../assets/images/tam-text-shape2.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-50"><div class="player-inner">
+                <div class="top">
+                    <a class="image"><img src="../../assets/images/player-1.webp" alt=""></a>
+                        <div class="overlay">
+                            <div class="social-link">
+                                <a href="https://www.twitch.tv" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a> 
+                                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a> 
+                                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> 
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a> 
+                            </div>
+                        </div>
+                </div>
+                <div class="content">
+                    <h4 class="title"><a  routerLink="/profile">THUNDERMAN</a></h4>
+                    <h5 class="level-text">40 LEVEL COMPLETED</h5>
+
+                    <div class="content-shape-img">
+                        <img width="351" height="126" src="../../assets/images/tam-text-shape.webp" alt="">
+                        <img width="351" height="126" src="../../assets/images/tam-text-shape2.webp" alt="">
+                    </div>
+                </div>
+            </div></div>
+            <div class="col-lg-4 col-md-6 col-12 mb-50"><div class="player-inner">
+                <div class="top">
+                    <a class="image"><img src="../../assets/images/player-1.webp" alt=""></a>
+                        <div class="overlay">
+                            <div class="social-link">
+                                <a href="https://www.twitch.tv" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a> 
+                                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a> 
+                                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> 
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a> 
+                            </div>
+                        </div>
+                </div>
+                <div class="content">
+                    <h4 class="title"><a  routerLink="/profile">THUNDERMAN</a></h4>
+                    <h5 class="level-text">40 LEVEL COMPLETED</h5>
+
+                    <div class="content-shape-img">
+                        <img width="351" height="126" src="../../assets/images/tam-text-shape.webp" alt="">
+                        <img width="351" height="126" src="../../assets/images/tam-text-shape2.webp" alt="">
+                    </div>
+                </div>
+            </div></div>
+            <div class="col-lg-4 col-md-6 col-12 mb-50"><div class="player-inner">
+                <div class="top">
+                    <a class="image" href=""><img src="../../assets/images/player-1.webp" alt=""></a>
+                        <div class="overlay">
+                            <div class="social-link">
+                                <a href="https://www.twitch.tv" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a> 
+                                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a> 
+                                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> 
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a> 
+                            </div>
+                        </div>
+                </div>
+                <div class="content">
+                    <h4 class="title"><a href="">THUNDERMAN</a></h4>
+                    <h5 class="level-text">40 LEVEL COMPLETED</h5>
+
+                    <div class="content-shape-img">
+                        <img width="351" height="126" src="../../assets/images/tam-text-shape.webp" alt="">
+                        <img width="351" height="126" src="../../assets/images/tam-text-shape2.webp" alt="">
+                    </div>
+                </div>
+            </div></div>
+            <div class="col-lg-4 col-md-6 col-12 mb-50"><div class="player-inner">
+                <div class="top">
+                    <a class="image" href=""><img src="../../assets/images/player-1.webp" alt=""></a>
+                        <div class="overlay">
+                            <div class="social-link">
+                                <a href="https://www.twitch.tv" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a> 
+                                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a> 
+                                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> 
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a> 
+                            </div>
+                        </div>
+                </div>
+                <div class="content">
+                    <h4 class="title"><a href="">THUNDERMAN</a></h4>
+                    <h5 class="level-text">40 LEVEL COMPLETED</h5>
+
+                    <div class="content-shape-img">
+                        <img width="351" height="126" src="../../assets/images/tam-text-shape.webp" alt="">
+                        <img width="351" height="126" src="../../assets/images/tam-text-shape2.webp" alt="">
+                    </div>
+                </div>
+            </div></div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

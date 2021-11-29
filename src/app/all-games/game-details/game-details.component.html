@@ -48,6 +48,7 @@
                                 <p >{{game.description_raw}}</p>
                             </div>
                             <div class="screenShots-inner mt-5">
+                                <h3 class="text-center py-3" style="font-size: 1.5rem;">Game ScreenShots</h3>
                                 <p class="text-center" *ngIf="game.screenShots?.length == 0">No ScreenShots For This Game</p>
                                  <owl-carousel-o [options]="screenShots" *ngIf="game.screenShots?.length">
                                     <ng-template carouselSlide *ngFor="let screenshot of game.screenShots">

@@ -1,5 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { APIResponse, Game } from '../model';
@@ -39,7 +38,7 @@ export class AllGamesComponent implements OnInit{
     .getGameList(sort, search)
     .subscribe((gameList: APIResponse<Game>)=>{
       this.games = gameList.results;
-      console.log(gameList);
+      // console.log(gameList);
       // console.log(gameList.results.length);
     })
   }

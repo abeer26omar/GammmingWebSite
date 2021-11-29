@@ -9,25 +9,25 @@
                                 <img src="../../assets/images/logo.webp" alt="">
                             </a>
                         </div>
-                        <div class="main-menu"> 
+                        <div class="main-menu" *ngIf="router.url !== '/signup' && router.url !== '/signin'"> 
                                <nav>
                                 <ul class="d-flex">
                                     <li><a  routerLink='/home'>home</a></li>
                                     <li><a  href="#">match</a></li>
                                     <li><a  routerLink='/games'>games</a></li>
-                                    <li><a  href="#">blog</a></li>
+                                    <li><a  routerLink="/players">players</a></li>
                                     <li><a  href="#">contact</a></li>
                                 </ul>
                                </nav>
                         </div>
-                        <div class="sing-up d-flex align-items-end">
-                            <div class="sign-up-btn" [ngClass]="{'display': logged}">
-                                <a class="btn btn-link" (click)="signUp()">
+                        <div class="sing-up d-flex align-items-end" >
+                            <div class="sign-up-btn"  *ngIf="router.url !== '/signup' && router.url !== '/signin' && !logged">
+                                <a class="btn btn-link" (click)="signin()">
                                     sign In <img class="arrow" src="../../assets/images/arrrow-icon1.webp" alt="">
                                 </a>
                             </div>
-                            <div class="profile" [ngClass]="{'display': !logged}">
-                                <a href=""><img src="../../assets/images/winners1.webp" alt=""></a>
+                            <div class="profile" *ngIf="logged">
+                                <a routerLink="/profile"><img src="../../assets/images/winners1.webp" alt=""></a>
                                 <a class="btn" (click)="logOut()">
                                  <i class="fas fa-sign-out-alt"></i>
                                 </a>

@@ -6,8 +6,8 @@ import { HttpService } from 'src/app/services/http.service';
 
 @Component({
   selector: 'app-games',
-  templateUrl: './games.component.html',
-  styleUrls: ['./games.component.css']
+  templateUrl: './pop-games.component.html',
+  styleUrls: ['./pop-games.component.css']
 })
 export class GamesComponent implements OnInit {
   public sort: string ='';

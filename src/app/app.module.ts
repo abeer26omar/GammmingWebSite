@@ -35,7 +35,6 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { CounterComponent } from './home/counter/counter.component';
-import { GamesComponent } from './home/games/games.component';
 import { PopUpVideoComponent } from './home/pop-up-video/pop-up-video.component';
 import { OwlCarouselComponent } from './home/owl-carousel/owl-carousel.component';
 import { FooterComponent } from './footer/footer.component';
@@ -48,6 +47,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SigninComponent } from './signin/signin.component';
 import { PlayersComponent } from './players/players.component';
+import { ProfileComponent } from './players/profile/profile.component';
+import { GamesComponent } from './home/pop-games/pop-games.component';
 
 
 
@@ -69,6 +70,7 @@ import { PlayersComponent } from './players/players.component';
     SignUpComponent,
     SigninComponent,
     PlayersComponent,
+    ProfileComponent,
     
 
   ],

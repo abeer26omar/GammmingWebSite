@@ -8,6 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class SidenavComponent implements OnInit {
   @Output() closeSideNav:EventEmitter<any> = new EventEmitter();
+  logged = false;
 
   constructor(private route: ActivatedRoute, private router: Router) { }
 
@@ -23,5 +24,16 @@ export class SidenavComponent implements OnInit {
   games(){
     this.router.navigate(['games']);
     this.closeNav();
+  }
+  players(){
+    this.router.navigate(['players']);
+    this.closeNav();
+  }
+  match(){}
+  contact(){}
+  signUp(){
+    this.router.navigate(['signin']);
+    this.closeNav();
+    this.logged = !this.logged;
   }
 }
