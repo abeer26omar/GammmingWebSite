@@ -1,6 +1,6 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { forkJoin, map, Observable } from 'rxjs';
+import { catchError, forkJoin, map, Observable, throwError } from 'rxjs';
 import { environment as env } from 'src/environments/environment';
 import { APIResponse } from '../model';
 import { Game } from '../model';
@@ -18,13 +18,11 @@ export class HttpService {
       if(search){
         params = new HttpParams().set('ordering', ordering).set('search', search)
       }
-    return this.http.get<APIResponse<Game>>(`${env.base_url}/games`, {params: params});
+    return this.http.get<APIResponse<Game>>(`${env.base_url}/games`, {params: params})
   }
-  
   getDetails(id: string): Observable<Game>{
     const gameInfo = this.http.get(`${env.base_url}/games/${id}`);
     const gameTrailer = this.http.get(`${env.base_url}/games/${id}/movies`);
-
     const gameScreenShots = this.http.get(`${env.base_url}/games/${id}/screenshots`)
 
     return forkJoin({
@@ -33,8 +31,7 @@ export class HttpService {
       return{
         ...resp['gameInfo'],
         screenShots: resp['gameScreenShots']?.results,
-        trailers: resp['gameTrailer']?.results,
-        
+        trailers: resp['gameTrailer']?.results,        
       } ;
     }))
   }

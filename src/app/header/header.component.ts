@@ -1,6 +1,7 @@
 import { Component, OnInit,Output,EventEmitter} from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
+import { User } from '../user.model';
 
 @Component({
   selector: 'app-header',
@@ -11,13 +12,13 @@ export class HeaderComponent implements OnInit {
 
   @Output() toggleSideBar: EventEmitter<any> = new EventEmitter();
   logged: boolean = false;
-  
 
   constructor(public router: Router, private authService: AuthService) { }
 
   ngOnInit(): void {
    this.authService.user.subscribe(user => {
      this.logged = user? true : false;
+    //  console.log(user.email)
    })
   }
 

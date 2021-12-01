@@ -1,3 +1,4 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
@@ -12,7 +13,8 @@ import { HttpService } from 'src/app/services/http.service';
 export class GamesComponent implements OnInit {
   public sort: string ='';
   public games: Array<Game> = [];
- 
+  error: string = '';
+
   private routeSub: Subscription = new Subscription;
   private gameSub: Subscription = new Subscription;
   constructor(private httpService: HttpService, 
@@ -35,6 +37,13 @@ export class GamesComponent implements OnInit {
     .getGameList(sort, search)
     .subscribe((gameList: APIResponse<Game>)=>{
       this.games = gameList.results;
+    }, (error:HttpErrorResponse) =>{
+      if(error.error){
+        setTimeout(() => {
+          this.error = 'An unknown Error Occurred Check your Internet Connection Or Reload Your Page';
+        }, 2000);
+        // console.log('An unknown Error Occurred Check your Internet Connection Or Reload Your Page')
+      }
     })
   }
   gameDetails(id: number){

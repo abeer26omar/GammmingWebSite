@@ -9,14 +9,14 @@
                                 <img src="../../assets/images/logo.webp" alt="">
                             </a>
                         </div>
-                        <div class="main-menu" *ngIf="router.url !== '/signup' && router.url !== '/signin'"> 
+                        <div class="main-menu" *ngIf="router.url !== '/signup' && router.url !== '/signin' && router.url !== '/forgetpassword'"> 
                                <nav>
                                 <ul class="d-flex">
                                     <li><a  routerLink='/home'>home</a></li>
-                                    <li><a  href="#">match</a></li>
+                                    <li><a  >match</a></li>
                                     <li><a  routerLink='/games'>games</a></li>
                                     <li><a  routerLink="/players">players</a></li>
-                                    <li><a  href="#">contact</a></li>
+                                    <li><a  routerLink="/contact">contact</a></li>
                                 </ul>
                                </nav>
                         </div>

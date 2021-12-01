@@ -1,5 +1,6 @@
 import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-sidenav',
@@ -8,32 +9,26 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class SidenavComponent implements OnInit {
   @Output() closeSideNav:EventEmitter<any> = new EventEmitter();
-  logged = false;
+  logged: boolean = false;
 
-  constructor(private route: ActivatedRoute, private router: Router) { }
+  constructor(private route: ActivatedRoute, 
+    private router: Router,
+    private authService: AuthService) { }
 
   ngOnInit(): void {
+    this.authService.user.subscribe(user => {
+      this.logged = user? true : false;
+     //  console.log(user.email)
+    })
   }
   closeNav(){
     this.closeSideNav.emit();
   }
-  home(){
-    this.router.navigate(['home']);
-    this.closeNav();
-  }
-  games(){
-    this.router.navigate(['games']);
-    this.closeNav();
-  }
-  players(){
-    this.router.navigate(['players']);
-    this.closeNav();
-  }
-  match(){}
-  contact(){}
+ 
   signUp(){
     this.router.navigate(['signin']);
     this.closeNav();
     this.logged = !this.logged;
   }
+  logOut(){}
 }

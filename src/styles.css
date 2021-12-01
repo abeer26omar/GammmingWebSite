@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Metal+Mania&display=swap');
+@import '~animate.css/animate.min';
 
 html, body {
     height: 100%;

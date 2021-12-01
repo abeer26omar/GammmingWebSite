@@ -7,6 +7,9 @@
         </div>
         <div class="gaming-inner wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s" style="visibility: visible; animation-duration: 1.2s; animation-delay: 0.2s; animation-name: fadeInUp;">
             <div class="row">
+                <div class="alert alert-danger text-center" *ngIf="error">
+                    {{error}}
+                  </div>
                 <div class="col-lg-6 col-md-6" *ngFor="let game of games.slice(0, 4)">
                     <div class="gaming-thumb">
                         <a href="#">

@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthService } from '../services/auth.service';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -22,12 +22,13 @@ export class SignUpComponent implements OnInit {
      if(!form.valid){
       return;
     }
+    const name = form.value.name;
     const email = form.value.email;
     const password = form.value.password;
     this.loadding = true;
 
-    this.auth.signUp(email,password).subscribe(resData=>{
-      // console.log(resData);
+    this.auth.signUp(name,email,password).subscribe(resData=>{
+      console.log(resData.name);
       this.loadding = false;
       this.route.navigate(['home']);
     }, errorMsg =>{

@@ -28,6 +28,7 @@ import { FormsModule } from '@angular/forms';
 import { GaugeModule } from 'angular-gauge';
 import { SearchPipe } from './search.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgwWowModule } from 'ngx-wow';
 
 
 //components
@@ -44,11 +45,13 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor';
 import { HttpErrorInterceptor } from './interceptors/http-errors.interceptor';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { SigninComponent } from './signin/signin.component';
+import { SignUpComponent } from './Auth/sign-up/sign-up.component';
+import { SigninComponent } from './Auth/signin/signin.component';
 import { PlayersComponent } from './players/players.component';
 import { ProfileComponent } from './players/profile/profile.component';
 import { GamesComponent } from './home/pop-games/pop-games.component';
+import { ForgetPasswordComponent } from './Auth/forget-password/forget-password.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -71,6 +74,8 @@ import { GamesComponent } from './home/pop-games/pop-games.component';
     SigninComponent,
     PlayersComponent,
     ProfileComponent,
+    ForgetPasswordComponent,
+    ContactComponent,
     
 
   ],
@@ -97,7 +102,8 @@ import { GamesComponent } from './home/pop-games/pop-games.component';
     FormsModule,
     HttpClientModule,
     GaugeModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgwWowModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

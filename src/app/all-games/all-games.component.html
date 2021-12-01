@@ -50,6 +50,10 @@
                 </div>
             <div class="games-inner">
                 <div class="row">
+                    <div class="lds-dual-ring" *ngIf="loadding"></div>
+                    <div class="alert alert-danger text-center" *ngIf="error">
+                        {{error}}
+                      </div>
                     <div class="col-lg-4 col-md-6" *ngFor="let game of games | search: searchText">
                         <div class="gaming-thumb">
                             <a href="#">

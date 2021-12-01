@@ -6,10 +6,14 @@ import { User } from '../user.model';
 interface authResponse{
   idToken: string,
   email:string,
+  name: string,
   refreshToken: string,
   expiresIn: string,
   localId: string,
   registered?: boolean
+}
+interface reset{
+  email: string
 }
 @Injectable({
   providedIn: 'root'
@@ -20,8 +24,9 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
   //SignUp
-  signUp(email: string, password: string){
+  signUp(name: string,email: string, password: string){
     return this.http.post<authResponse>('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAop5M5TQZHSh_JdQgazrFIGuFzOKHaMe8',{
+      name: name,
       email: email,
       password: password,
       returnSecureToken: true
@@ -29,7 +34,8 @@ export class AuthService {
     .pipe(catchError(this.handelError), 
     
     tap(resData => {
-      this.handelAuth(resData.email, resData.localId, resData.idToken, +resData.expiresIn)
+      this.handelAuth(resData.name,resData.email, resData.localId, resData.idToken, +resData.expiresIn)
+      localStorage.setItem('user', JSON.stringify(resData))
     }))
   }
   //signIn
@@ -42,9 +48,16 @@ export class AuthService {
     .pipe(catchError(this.handelError), 
 
     tap(resData => {
-      this.handelAuth(resData.email, resData.localId, resData.idToken, +resData.expiresIn)
+      this.handelAuth(resData.name,resData.email, resData.localId, resData.idToken, +resData.expiresIn)
+    }))
+  }
+  //reset password
+  forgetPassword(requestType: string, email: string){
+    return this.http.post<reset>('https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyAop5M5TQZHSh_JdQgazrFIGuFzOKHaMe8',{
+      requestType:requestType,
+      email:email
     })
-    )
+    .pipe(catchError(this.handelError))
   }
   //logOut
   logOut(){
@@ -56,10 +69,11 @@ export class AuthService {
     // this.user.next(user)   
   }
 
-  private handelAuth(email: string, userId: string, token: string, expiresIn: number){
+  private handelAuth(name: string,email: string, userId: string, token: string, expiresIn: number){
     
     const experationDate = new Date(new Date().getTime() + expiresIn * 1000);
     const user = new User(
+      name,
       email, 
       userId,
       token,
@@ -84,6 +98,5 @@ export class AuthService {
           break;  
       }
       return throwError(errorMsg);
-  }
-  
+  }  
 }

@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { PopUpVideoComponent } from './pop-up-video/pop-up-video.component';
+import { NgwWowService } from 'ngx-wow';
+import { Subscription } from 'rxjs';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,9 +12,11 @@ import { PopUpVideoComponent } from './pop-up-video/pop-up-video.component';
 })
 export class HomeComponent implements OnInit {
   signIn: boolean = false;
-  constructor(private dialog: MatDialog, private router: Router ) { }
+  constructor(private dialog: MatDialog, private router: Router,private wowService: NgwWowService ) { }
+  // private wowSubscription: Subscription;
 
   ngOnInit(): void {
+    // this.wowService.init();
   }
   openVideo(){
     this.dialog.open(PopUpVideoComponent,{

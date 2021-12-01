@@ -6,9 +6,10 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PlayersComponent } from './players/players.component';
 import { ProfileComponent } from './players/profile/profile.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { SigninComponent } from './signin/signin.component';
-
+import { SignUpComponent } from './Auth/sign-up/sign-up.component';
+import { SigninComponent } from './Auth/signin/signin.component';
+import { ForgetPasswordComponent } from './Auth/forget-password/forget-password.component';
+import { ContactComponent } from './contact/contact.component';
 const routes: Routes = [
   { path:'', redirectTo: 'home', pathMatch:'full'},
   { path:'home', component:HomeComponent, data:{ breadcrumb: 'home'}},
@@ -16,8 +17,10 @@ const routes: Routes = [
   { path:'gamedetails/:id', component:GameDetailsComponent, data:{ breadcrumb: 'game Details'}},
   { path:'signup', component:SignUpComponent},
   { path:'signin', component:SigninComponent},
+  { path:'forgetpassword', component: ForgetPasswordComponent},
   { path:'players', component:PlayersComponent, data:{ breadcrumb:'Players'}},
   { path:'profile', component:ProfileComponent, data:{ breadcrumb:'profile'}},
+  { path:'contact', component: ContactComponent},
   { path:'**', component:NotFoundComponent}
   
 ];
