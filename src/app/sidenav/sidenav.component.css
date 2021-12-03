@@ -1,14 +1,14 @@
 
 mat-divider{
-    border-top-width: 2px;
+    border-top-width: 0.13rem;
     border-color: whitesmoke;
 }
 
 .mat-list-item{
     color: grey!important;
     font-size: 1rem;
-    height: 44px !important;
-    margin-bottom: 4px;
+    height: 2.75rem !important;
+    margin-bottom: 0.25rem;
     font-family: 'Exo' ,sans-serif;
     display: flex !important;
     align-items: center !important;
@@ -29,8 +29,8 @@ a i{
 }
 .close mat-icon{
     position: absolute;
-    top: 10px;
-    right: 5px;
+    top: 0.63rem;
+    right: 0.3rem;
     font-size: 1.5rem;
     color: whitesmoke;
 }
@@ -38,7 +38,7 @@ h2.mat-subheader{
     color: whitesmoke;
     font-family: 'Metal Mania', cursive;
     font-size: 1.5rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.1rem;
     justify-content: center;
 }
 .sign-up-btn .btn.btn-link {

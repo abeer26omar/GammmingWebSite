@@ -10,7 +10,7 @@ html, body {
   }
   
 body {
-    line-height: 1.875rem !important;
+    line-height: 1.88rem !important;
     font-size: 1rem !important;
     font-style: normal !important;
     font-weight: 400 !important;
@@ -20,31 +20,31 @@ body {
     letter-spacing: 0.02em !important;
 }
 .mb-30{
-  margin-bottom: 30px;
+  margin-bottom: 1.9rem;
 }
 .mb-50{
-  margin-bottom: 50px;
+  margin-bottom: 3.1rem;
 }
 .mb-60 {
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 } 
 .mb-70{
-  margin-bottom: 70px;
+  margin-bottom: 4.4rem;
 } 
 .mb-115 {
-  margin-bottom: 115px;
+  margin-bottom: 7.2rem;
 }
 .mb-118 {
-  margin-bottom: 118px;
+  margin-bottom: 7.38rem;
 }
 .mb-125 {
-  margin-bottom: 125px;
+  margin-bottom: 7.81rem;
 }
 .mb-130{
-  margin-bottom: 130px;
+  margin-bottom: 8.13rem;
 }
 .mb-140{
-  margin-bottom: 140px;
+  margin-bottom: 8.75rem;
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400 ;
@@ -55,37 +55,37 @@ h1, h2, h3, h4, h5, h6 {
 }
   
   h1 {
-    font-size: 120px ;
-    line-height: 120px ;
+    font-size: 7.5rem ;
+    line-height: 7.5rem ;
    
   }
   
   h2 {
-    font-size: 55px;
-    line-height: 72px;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
     font-weight: 700 ;
     
   }
   
   h3 {
-    font-size: 25px;
-    line-height: 38px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     font-weight: 700;
   }
   
   h4 {
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: 0.84rem;
   }
   
   h5 {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 0.88rem;
+    line-height: 0.88rem;
   }
   
   h6 {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 0.75rem;
+    line-height: 0.88rem;
   }
   p {
     color: #f3f3f3;

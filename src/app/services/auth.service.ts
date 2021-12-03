@@ -1,6 +1,6 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, Subject, tap, throwError } from 'rxjs';
+import { catchError, map, Subject, tap, throwError } from 'rxjs';
 import { User } from '../user.model';
 
 interface authResponse{
@@ -38,6 +38,7 @@ export class AuthService {
       localStorage.setItem('user', JSON.stringify(resData))
     }))
   }
+  
   //signIn
   signIn(email: string, password: string){
     return this.http.post<authResponse>('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAop5M5TQZHSh_JdQgazrFIGuFzOKHaMe8',{

@@ -3,46 +3,46 @@
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
-    height: 940px;
+    height: 58.75rem;
     position: relative;
   }
   @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     .hero-banner {
-      height: 820px;
+      height: 51.25rem;
     }
   }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .hero-banner {
-      height: 780px;
+      height: 48.75rem;
     }
   }
   @media only screen and (min-width: 768px) and (max-width: 991.5px) {
     .hero-banner {
-      height: 670px;
+      height: 41.88rem;
     }
   }
   @media only screen and (max-width: 767px) {
     .hero-banner {
-      height: 600px;
+      height: 37.5rem;
     }
   }
   @media only screen and (max-width: 575px) {
     .hero-banner {
-      height: 570px;
+      height: 35.63rem;
     }
   }
   @media only screen and (min-width: 768px) and (max-width: 991.5px) {
     .hero-banner.mb-130 {
-      margin-bottom: 72px;
+      margin-bottom: 4.5rem;
     }
   }
   @media only screen and (max-width: 767px) {
     .hero-banner.mb-130 {
-      margin-bottom: 56px;
+      margin-bottom: 3.5rem;
     }
   }
 .hero-content {
-    padding-top: 78px;
+    padding-top: 4.88rem;
     position: relative;
     z-index: 9;
 }
@@ -50,88 +50,88 @@
   .hero-content {
     text-align: center;
     padding-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .hero-content {
     text-align: center;
     margin-bottom: 0;
-    padding-top: 28px;
+    padding-top: 1.75rem;
   }
 }
 @media only screen and (max-width: 575px) {
   .hero-content {
-    padding-top: 152px;
+    padding-top: 9.5;
   }
 }
 .hero-content h1 {
-  margin-bottom: 41px;
+  margin-bottom: 2.6rem;
   font-family: 'Metal Mania', cursive;
-  text-shadow: 3px 3px 0px #b154f0;
+  text-shadow: 0.19rem 0.1875rem 0 #b154f0;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .hero-content h1 {
-    font-size: 95px;
-    line-height: 98px;
+    font-size: 5.94rem;
+    line-height: 6.13rem;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-content h1 {
-    margin-bottom: 33px;
-    font-size: 88px;
-    line-height: 88px;
+    margin-bottom: 2.063rem;
+    font-size: 5.5rem;
+    line-height: 5.5rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .hero-content h1 {
-    margin-bottom: 21px;
-    font-size: 75px;
-    line-height: 78px;
+    margin-bottom: 1.3rem;
+    font-size: 4.7rem;
+    line-height: 4.9rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .hero-content h1 {
-    margin-bottom: 15px;
-    font-size: 52px;
-    line-height: 55px;
+    margin-bottom: 0.94rem;
+    font-size: 3.25rem;
+    line-height: 3.44rem;
   }
 }
 @media only screen and (max-width: 575px) {
   .hero-content h1 {
-    margin-bottom: 13px;
-    font-size: 40px;
-    line-height: 48px;
+    margin-bottom: 0.82rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 }
 .hero-content p {
-  font-size: 25px;
+  font-size: 1.6rem;
   font-weight: 600;
-  margin-bottom: 47px;
+  margin-bottom: 2.94rem;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-content p {
-    font-size: 23px;
-    margin-bottom: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .hero-content p {
-    font-size: 22px;
-    margin-bottom: 31px;
+    font-size: 1.4rem;
+    margin-bottom: 1.9rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .hero-content p {
-    font-size: 18px;
-    margin-bottom: 24px;
+    font-size: 1.13rem;
+    margin-bottom: 1.5rem;
   }
 }
 @media only screen and (max-width: 575px) {
   .hero-content p {
-    font-size: 17px;
-    margin-bottom: 20px;
-    line-height: 28px;
+    font-size: 1.063rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 .btn.btn-link{
@@ -149,11 +149,11 @@
 .hero-img {
   position: absolute;
   bottom: 0;
-  right: 55px;
+  right: 3.44rem;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-img {
-    right: 20px;
+    right: 1.25rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
@@ -172,42 +172,42 @@
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .hero-img {
-    width: 650px;
+    width: 40.63rem;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-img img {
-    width: 620px;
+    width: 38.75rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .hero-img img {
-    width: 450px;
+    width: 28.13rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .hero-img img {
-    width: 300px;
+    width: 18.75rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .section-title.mb-60 {
-    margin-bottom: 30px;
+    margin-bottom: 1.88rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .section-title.mb-60 {
-    margin-bottom: 30px;
+    margin-bottom: 1.88rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .section-title.mb-70 {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .section-title.mb-70 {
-    margin-bottom: 35px;
+    margin-bottom: 2.19rem;
   }
 }
 .section-title h2 {
@@ -215,67 +215,67 @@
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .section-title h2 {
-    font-size: 50px;
-    line-height: 65px;
+    font-size: 3.13rem;
+    line-height: 4.1rem;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-title h2 {
-    font-size: 40px;
-    line-height: 54px;
+    font-size: 2.5rem;
+    line-height: 3.38rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .section-title h2 {
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 2.19rem;
+    line-height: 2.8rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .section-title h2 {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 1.75rem;
+    line-height: 2.38rem;
   }
 }
 @media only screen and (max-width: 575px) {
   .section-title h2 {
-    font-size: 23px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 .gamming-inner .row {
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .gamming-inner .row {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -0.63rem;
+    margin-right: -0.63rem;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .gamming-inner .row {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -0.63rem;
+    margin-right: -0.63rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .gamming-inner .row {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -0.63rem;
+    margin-right: -0.63rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .gamming-inner .row {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -0.63rem;
+    margin-right: -0.63rem;
   }
 }
 @media only screen and (max-width: 767px){
 
   .gamming-inner .row {
-      margin-left: -10px;
-      margin-right: -10px;
+      margin-left: -0.63rem;
+      margin-right: -0.63rem;
     }
 }
 .gamming-inner .col-lg-4 {
@@ -290,14 +290,14 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .gamming-inner .col-lg-4 {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.63rem;
+    padding-right: 0.63rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .gamming-inner .col-lg-4 {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.63rem;
+    padding-right: 0.63rem;
   }
 }
 .single-gamming-world {
@@ -306,76 +306,76 @@
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  padding: 55px 40px 50px;
+  padding: 3.44rem 2.5rem 3.13rem;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single-gamming-world {
-    padding: 54px 25px 45px;
+    padding: 3.34rem 1.56rem 2.8rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .single-gamming-world {
-    padding: 30px 20px 35px;
+    padding: 1.88rem 1.25rem 2.2rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .single-gamming-world {
-    padding: 30px 20px 28px;
-    margin-bottom: 30px;
+    padding: 1.88rem 1.25rem 1.75rem;
+    margin-bottom: 1.88rem;
   }
 }
 @media only screen and (max-width: 575px) {
   .single-gamming-world {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
 
 .gamming-world-thumb {
-  margin-bottom: 50px;
+  margin-bottom: 3.13rem;
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .gamming-world-thumb {
-    margin-bottom: 30px;
+    margin-bottom: 1.88rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .gamming-world-thumb {
-    margin-bottom: 25px;
+    margin-bottom: 1.57rem;
   }
 }
 .gamming-world-text h3 {
-  margin-bottom: 17px;
+  margin-bottom: 1.06rem;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .gamming-world-text h3 {
-    font-size: 23px;
-    line-height: 38px;
+    font-size: 1.44rem;
+    line-height: 2.34rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .gamming-world-text h3 {
-    margin-bottom: 13px;
-    font-size: 18px;
-    line-height: 38px;
+    margin-bottom: 0.81rem;
+    font-size: 1.13rem;
+    line-height: 2.34rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .gamming-world-text h3 {
-    margin-bottom: 11px;
-    font-size: 20px;
-    line-height: 30px;
+    margin-bottom: 0.69rem;
+    font-size: 1.25rem;
+    line-height: 1.88rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .gaming-world-text p {
-    font-size: 15px;
-    line-height: 28px;
+    font-size: 0.94rem;
+    line-height: 1.75rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .gamming-world-text p {
-    font-size: 15px;
-    line-height: 28px;
+    font-size: 0.94rem;
+    line-height: 1.75rem;
   }
 }
 .title h2 {
@@ -383,89 +383,89 @@
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .title h2 {
-    font-size: 50px;
-    line-height: 65px;
+    font-size: 3.1rem;
+    line-height: 4.06rem;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .title h2 {
-    font-size: 40px;
-    line-height: 54px;
+    font-size: 2.5rem;
+    line-height: 3.34rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .title h2 {
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 2.19rem;
+    line-height: 2.82rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .title h2 {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 1.75rem;
+    line-height: 2.34rem;
   }
 }
 @media only screen and (max-width: 575px) {
   .title h2 {
-    font-size: 23px;
-    line-height: 32px;
+    font-size: 1.44rem;
+    line-height: 2rem;
   }
 }
 .title h2 span {
   color: #b154f0;
 }
 .title p {
-  font-size: 18px;
-  line-height: 35px;
-  margin-top: 12px;
+  font-size: 1.13rem;
+  line-height: 2.19rem;
+  margin-top: 0.75rem;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .title p {
-    font-size: 17px;
-    line-height: 32px;
-    margin-top: 10px;
+    font-size: 1.06rem;
+    line-height: 2rem;
+    margin-top: 0.63rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
   .title p {
-    font-size: 16px;
-    line-height: 30px;
-    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.88rem;
+    margin-top: 0.63rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .title p {
-    font-size: 15px;
-    line-height: 28px;
-    margin-top: 10px;
+    font-size: 0.94rem;
+    line-height: 1.75rem;
+    margin-top: 0.63rem;
   }
 }
 @media only screen and (max-width: 575px) {
   .title p {
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 0.88rem;
+    line-height: 1.57rem;
   }
 }
 /*****************upComming matches**********************/
 .upComming-list {
-  border: 4px solid #281e4d;
+  border: 0.25rem solid #281e4d;
   background: #09002a;
-  padding: 32px 65px;
-  border-radius: 38px;
+  padding: 2rem 4.1rem;
+  border-radius: 2.38rem;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .upComming-list{
-    padding: 32px 35px;
+    padding: 2rem 2.2rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .upComming-list {
-    padding: 28px 25px;
+    padding: 1.75rem 1.57rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .upComming-list{
-    padding: 25px;
+    padding: 1.57rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -483,65 +483,65 @@
 }
 .upComming-text p {
   font-weight: 500;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .upComming-text p {
-    margin-bottom: 13px;
-    font-size: 15px;
+    margin-bottom: 0.81rem;
+    font-size: 0.94rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .upComming-text p {
-    margin-bottom: 13px;
-    font-size: 15px;
+    margin-bottom: 0.81rem;
+    font-size: 0.94rem;
   }
 }
 @media only screen and (max-width: 575px) {
   .upComming-text p {
-    margin-bottom: 11px;
-    font-size: 14px;
+    margin-bottom: 0.69rem;
+    font-size: 0.88rem;
   }
 }
 .upComming-text h3 {
-  font-size: 35px;
-  margin-bottom: 11px;
+  font-size: 2.19rem;
+  margin-bottom: 0.69rem;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .upComming-text h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .upComming-text h3 {
-    font-size: 23px;
-    margin-bottom: 10px;
-    line-height: 25px;
+    font-size: 1.44rem;
+    margin-bottom: 0.63rem;
+    line-height: 1.57rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .upComming-text h3 {
-    font-size: 23px;
-    margin-bottom: 10px;
-    line-height: 25px;
+    font-size: 1.44rem;
+    margin-bottom: 0.63rem;
+    line-height: 1.57rem;
   }
 }
 @media only screen and (max-width: 575px) {
   .upComming-text h3 {
-    font-size: 19px;
-    margin-bottom: 7px;
-    line-height: 21px;
+    font-size: 1.2rem;
+    margin-bottom: 0.44rem;
+    line-height: 1.3rem;
   }
 }
 .upComming-text h3 a:hover {
   color: #b154f0;
 }
 .upComming-text span {
-  font-size: 14px;
+  font-size: 0.88rem;
   color: #b154f0;
 }
 .upComming-play{
-  margin: 0 35px;
+  margin: 0 2.19rem;
   width: 12%;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -551,19 +551,19 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .upComming-play {
-    margin: 0 30px;
+    margin: 0 1.88rem;
     width: 16%;
   }
 }
 @media only screen and (max-width: 767px) {
   .upComming-play {
-    margin: 20px 0 15px;
+    margin: 1.25rem 0 0.94rem;
     width: 100%;
   }
 }
 .video-popup {
-  width: 120px;
-  height: 120px;
+  width: 7.5rem;
+  height: 7.5rem;
   border-radius: 50%;
   background: #b154f0;
   display: -webkit-box;
@@ -580,23 +580,23 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .video-popup {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .video-popup {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     margin: 0 auto;
   }
 }
 
 .upComming-play span {
-  font-size: 14px;
-  line-height: 35px;
+  font-size: 0.88rem;
+  line-height: 2.19rem;
   color: #ffa700;
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 .upComming-thumb {
   width: 33%;
@@ -611,52 +611,52 @@
 }
 
 .single_upcoming_thumb {
-  margin-right: 35px;
+  margin-right: 2.19rem;
 }
 .single_upcoming_thumb:last-child {
   margin-right: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single_upcoming_thumb {
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
 }
 @media only screen and (max-width: 575px) {
   .single_upcoming_thumb {
-    margin-right: 25px;
+    margin-right: 1.57rem;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single_upcoming_thumb img {
-    width: 80px;
+    width: 5rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single_upcoming_thumb img {
-    width: 60px;
+    width: 3.75rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .single_upcoming_thumb img {
-    width: 70px;
+    width: 4.38rem;
   }
 }
 @media only screen and (max-width: 575px) {
   .single_upcoming_thumb img {
-    width: 60px;
+    width: 3.75rem;
   }
 }
 .others_match_btn {
-  margin-top: 70px;
+  margin-top: 4.34rem;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .others_match_btn {
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .others_match_btn {
-    margin-top: 32px;
+    margin-top: 2rem;
   }
 }
 .gaming-update-inner {
@@ -664,23 +664,23 @@
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  height: 300px;
-  padding: 0 100px;
+  height: 18.75rem;
+  padding: 0 5.25rem;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .gaming-update-inner {
-    padding: 0 40px;
+    padding: 0 2.5rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .gaming-update-inner {
-    padding: 0 30px;
-    height: 263px;
+    padding: 0 1.88rem;
+    height: 16.44rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .gaming-update-inner {
-    padding: 0 30px;
+    padding: 0 1.88rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -693,65 +693,65 @@
 }
 @media only screen and (max-width: 575px) {
   .gaming-update-inner {
-    height: 260px;
+    height: 16.25rem;
   }
 }
 .gaming-update-text h2 {
   margin-bottom: 0;
 
-    font-size: 55px;
-    line-height: 72px;
+    font-size: 3.44rem;
+    line-height: 4.5rem;
     font-weight: 700;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .gaming-update-text h2 {
-    font-size: 48px;
-    line-height: 62px;
+    font-size: 3rem;
+    line-height: 3.88rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .gaming-update-text h2 {
-    font-size: 38px;
-    line-height: 55px;
+    font-size: 2.4rem;
+    line-height: 3.44rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .gaming-update-text h2 {
-    font-size: 30px;
-    line-height: 47px;
+    font-size: 1.88rem;
+    line-height: 2.9rem;
   }
 }
 @media only screen and (max-width: 575px) {
   .gaming-update-text h2 {
-    font-size: 22px;
-    line-height: 36px;
+    font-size: 1.4rem;
+    line-height: 2.25rem;
   }
 }
 .gaming-update-btn {
-  margin-left: 40px;
+  margin-left: 2.5rem;
 }
 .gaming-update-btn .btn.btn-link {
-  font-size: 19px;
-  padding: 0 10px;
+  font-size: 1.2rem;
+  padding: 0 0.63rem;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .gaming-update-btn .btn.btn-link {
-    font-size: 18px;
+    font-size: 1.1rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .gaming-update-btn .btn.btn-link {
-    font-size: 17px;
+    font-size: 1.05rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .gaming-update-btn {
-    margin-left: 30px;
+    margin-left: 1.88rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .gaming-update-btn {
     margin-left: 0;
-    margin-top: 24px;
+    margin-top: 1.5rem;
   }
 }

@@ -3,7 +3,7 @@
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
-    height: 502px;
+    height: 31.4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -13,89 +13,89 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .breadcrumb-bg {
-      height: 440px;
+      height: 27.5rem;
     }
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .breadcrumb-bg {
-      height: 390px;
+      height: 24.4rem;
     }
   }
   @media only screen and (max-width: 767px) {
     .breadcrumb-bg {
-      height: 340px;
+      height: 21.25rem;
     }
   }
   @media only screen and (max-width: 575px) {
     .breadcrumb-bg {
-      height: 420px;
+      height: 26.25rem;
     }
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .breadcrumb-bg.mb-140 {
-      margin-bottom: 80px;
+      margin-bottom: 5rem;
     }
   }
   @media only screen and (max-width: 767px) {
     .breadcrumb-bg.mb-140 {
-      margin-bottom: 60px;
+      margin-bottom: 3.75rem;
     }
   }
   .s-title {
-    padding-top: 65px;
+    padding-top: 4.06rem;
   }
   @media only screen and (max-width: 575px) {
     .s-title {
-      padding-top: 162px;
+      padding-top: 10.1rem;
     }
   }
   .s-title h1{
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 5.6rem;
+    line-height: 5.6rem;
     font-family: "Metal Mania", cursive;
     text-shadow: 3px 3px 0px #b154f0;
-    margin-bottom: 25px;
+    margin-bottom: 1.6rem;
   }
  
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .s-title h1 {
-      font-size: 72px;
-      line-height: 75px;
-      margin-bottom: 22px;
+      font-size: 4.5rem;
+      line-height: 4.7rem;
+      margin-bottom: 1.4rem;
     }
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .s-title h1 {
-      font-size: 62px;
-      line-height: 65px;
-      margin-bottom: 16px;
+      font-size: 3.9rem;
+      line-height: 4.06rem;
+      margin-bottom: 1rem;
     }
   }
   @media only screen and (max-width: 767px) {
     .s-title h1 {
-      font-size: 55px;
-      line-height: 60px;
-      margin-bottom: 18px;
+      font-size: 3.4rem;
+      line-height: 3.75rem;
+      margin-bottom: 1.1rem;
     }
   }
   @media only screen and (max-width: 575px) {
     .s-title h1 {
-      font-size: 42px;
-      line-height: 48px;
-      margin-bottom: 16px;
+      font-size: 2.6rem;
+      line-height: 3rem;
+      margin-bottom: 1rem;
     }
   }
   .breadcrumbs ol li {
-    font-size: 17px;
+    font-size: 1.06rem;
     font-weight: bold;
     color: #b154f0;
     text-transform: uppercase;
-    margin-right: 8px;
+    margin-right: 0.5rem;
   }
   @media only screen and (max-width: 767px) {
     .breadcrumbs ol li {
-      font-size: 16px;
-      line-height: 25px;
+      font-size: 1rem;
+      line-height: 1.56rem;
     }
   }
   .breadcrumbs ol li:last-child {
@@ -110,12 +110,12 @@
   /**************************/
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .players-list.mb-125 {
-      margin-bottom: 70px;
+      margin-bottom: 4.4rem;
     }
   }
   @media only screen and (max-width: 767px) {
     .players-list.mb-125 {
-      margin-bottom: 48px;
+      margin-bottom: 3rem;
     }
   }
   
@@ -125,10 +125,10 @@
   }
   .player-inner .image {
     display: block;
-    border-radius: 38px;
+    border-radius: 2.4rem;
   }
   .player-inner .image img {
-    border-radius: 38px;
+    border-radius: 2.4rem;
     width: 100%;
   }
   .player-inner .overlay {
@@ -147,8 +147,8 @@
             justify-content: center;
     background: rgba(0, 0, 0, 0.7);
     border: 6px solid rgba(255, 255, 255, 0.4);
-    border-radius: 38px;
-    padding: 10px;
+    border-radius: 2.4rem;
+    padding: 0.63rem;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: all 0.3s ease;
@@ -156,11 +156,11 @@
   }
   .player-inner .social-link {
     position: absolute;
-    font-size: 24px;
-    bottom: 40px;
+    font-size: 1.5rem;
+    bottom: 2.5rem;
   }
   .player-inner .social-link a {
-    margin-right: 30px;
+    margin-right: 1.9rem;
     color: #ffffff;
     position: relative;
     z-index: 1;
@@ -192,8 +192,8 @@
   .player-inner .social-link a::after {
     position: absolute;
     content: "";
-    width: 48px;
-    height: 39px;
+    width: 3rem;
+    height: 2.5rem;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -221,17 +221,17 @@
   }
   .player-inner .content {
     position: relative;
-    padding: 27px 20px;
+    padding: 1.7rem 1.25rem;
     text-align: center;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     z-index: 1;
-    margin-top: 30px;
+    margin-top: 1.9rem;
   }
   
   .player-inner .content .title {
-    font-size: 25px;
-    line-height: 38px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     font-weight: 700;
   }
   .player-inner .content .title a {
@@ -246,7 +246,7 @@
   }
   .player-inner .content .content-shape-img img {
     width: 100%;
-    height: 126px;
+    height: 7.88rem;
     -o-object-fit: fill;
        object-fit: fill;
     position: absolute;

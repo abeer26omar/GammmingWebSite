@@ -19,8 +19,8 @@ const routes: Routes = [
   { path:'signin', component:SigninComponent},
   { path:'forgetpassword', component: ForgetPasswordComponent},
   { path:'players', component:PlayersComponent, data:{ breadcrumb:'Players'}},
-  { path:'profile', component:ProfileComponent, data:{ breadcrumb:'profile'}},
-  { path:'contact', component: ContactComponent},
+  { path:'profile/:id', component:ProfileComponent, data:{ breadcrumb:'profile'}},
+  { path:'contact', component: ContactComponent, data:{ breadcrumb:'contact'}},
   { path:'**', component:NotFoundComponent}
   
 ];

@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { map } from 'rxjs';
+import { UsersService } from 'src/app/services/users.service';
 import { AuthService } from '../../services/auth.service';
 
 @Component({
@@ -10,12 +12,20 @@ import { AuthService } from '../../services/auth.service';
 })
 export class SignUpComponent implements OnInit {
 @ViewChild('f') signupForm: NgForm | undefined; 
-
+user: any = [];
  loadding = false;
  error: string = '';
-  constructor(private route: Router, private auth: AuthService) {}
+  constructor(private route: Router, 
+    private auth: AuthService,
+    private users: UsersService) {}
 
-  ngOnInit(): void {   
+  ngOnInit(): void {
+    // this.users.getUsers()
+    // .subscribe(allUsers => {
+    //   console.log(allUsers)
+    //   this.user = allUsers
+    //   // console.log(this.user)
+    // });   
   }
   submitData(form: NgForm){
      // console.log(data)
@@ -25,10 +35,11 @@ export class SignUpComponent implements OnInit {
     const name = form.value.name;
     const email = form.value.email;
     const password = form.value.password;
+    const describtion = form.value.describtion;
     this.loadding = true;
 
     this.auth.signUp(name,email,password).subscribe(resData=>{
-      console.log(resData.name);
+      // console.log(resData.name);
       this.loadding = false;
       this.route.navigate(['home']);
     }, errorMsg =>{
@@ -37,6 +48,11 @@ export class SignUpComponent implements OnInit {
       this.loadding = false;
     }
     );
-    form.reset();
+    this.users.saveUsers(name, email, password,describtion).subscribe(userDateRes =>{
+      // console.log(userDateRes)
+    })
+    // if(form){
+    //   form.reset();
+    // }
   }
 }

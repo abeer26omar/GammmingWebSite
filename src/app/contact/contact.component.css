@@ -1,0 +1,327 @@
+.breadcrumb-bg {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 31.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .breadcrumb-bg {
+    height: 27.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb-bg {
+    height: 24.4rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .breadcrumb-bg {
+    height: 21.25rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .breadcrumb-bg {
+    height: 26.25rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb-bg.mb-140 {
+    margin-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .breadcrumb-bg.mb-140 {
+    margin-bottom: 3.75rem;
+  }
+}
+.title {
+  padding-top: 4.06rem;
+}
+@media only screen and (max-width: 575px) {
+  .title {
+    padding-top: 10.1rem;
+  }
+}
+.title h1{
+  font-size: 5.6rem;
+  line-height: 5.6rem;
+  font-family: "Metal Mania", cursive;
+  text-shadow: 3px 3px 0px #b154f0;
+  margin-bottom: 1.6rem;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .title h1 {
+    font-size: 4.5rem;
+    line-height: 4.7rem;
+    margin-bottom: 1.4rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .title h1 {
+    font-size: 3.9rem;
+    line-height: 4.06rem;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title h1 {
+    font-size: 3.4rem;
+    line-height: 3.75rem;
+    margin-bottom: 1.1rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .title h1 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+.breadcrumbs ol li {
+  font-size: 1.06rem;
+  font-weight: bold;
+  color: #b154f0;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+@media only screen and (max-width: 767px) {
+  .breadcrumbs ol li {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}
+.breadcrumbs ol li:last-child {
+  margin-right: 0;
+}
+.breadcrumbs ol li a {
+  color: #ffffff;
+}
+.breadcrumbs ol li a:hover {
+  color: #b154f0;
+}
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-page.mb-140 {
+      margin-bottom: 5rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .contact-page.mb-140 {
+      margin-bottom: 3.75rem;
+    }
+  }
+  
+  .contact-area {
+    margin-bottom: 7.8rem;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-area {
+      margin-bottom: 4.75rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .contact-area {
+      margin-bottom: 1.6rem;
+    }
+  }
+  .contact-area .row {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .contact-area .row {
+      margin-left: -0.6rem;
+      margin-right: -0.6rem;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .contact-area .row {
+      margin-left: -0.6rem;
+      margin-right: -0.6rem;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-area .row {
+      margin-left: -0.6rem;
+      margin-right: -0.6rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .contact-area .row {
+      margin-left: -0.6rem;
+      margin-right: -0.6rem;
+    }
+  }
+  .contact-area .col-lg-4 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .contact-area .col-lg-4 {
+      padding-left: 0.9rem;
+      padding-right: 0.9rem;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-area .col-lg-4 {
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .contact-area .col-lg-4 {
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+    }
+  }
+  .contact-info-list {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    padding: 2.8rem;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .contact-info-list {
+      padding: 2.5rem 1.25rem;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-info-list {
+      padding: 1.9rem 0.75rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .contact-info-list {
+      padding: 1.9rem 0.9rem;
+      margin-bottom: 1.9rem;
+    }
+  }
+  .contact-info-list.left {
+    text-align: left;
+    padding-left: 4.09rem;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .contact-info-list.left {
+      padding-left: 2.5rem;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-info-list.left {
+      padding-left: 1.25rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .contact-info-list.left {
+      padding: 1.8rem 0.9rem;
+      text-align: center;
+    }
+  }
+  .contact-info-list.center {
+    text-align: center;
+  }
+  .contact-info-list.right {
+    text-align: right;
+    padding-right: 4.06rem;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .contact-info-list.right {
+      padding-right: 2.5rem;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-info-list.right {
+      padding-right: 1.25rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .contact-info-list.right {
+      padding: 1.9rem 0.9rem;
+      text-align: center;
+    }
+  }
+  
+  .contact-info-thumb {
+    margin-bottom: 6.9rem;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-info-thumb {
+      margin-bottom: 3.1rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .contact-info-thumb {
+      margin-bottom: 2.8rem;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-info-thumb img {
+      width: 5.6rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .contact-info-thumb img {
+      width: 5rem;
+    }
+  }
+  
+  .contact-info-text h3 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .contact-info-text h3 {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-info-text h3 {
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+      line-height: 2.4rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .contact-info-text h3 {
+      margin-bottom: 0.7rem;
+      font-size: 1.25rem;
+      line-height: 1.9rem;
+    }
+  }
+  .contact-info-text p {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .contact-info-text p {
+      font-size: 0.9rem;
+      line-height: 2.1rem;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-info-text p {
+      font-size: 0.8rem;
+      line-height: 1.75rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .contact-info-text p {
+      font-size: 0.9rem;
+      line-height: 1.75rem;
+    }
+  }
+  .contact-info-text p a:hover {
+    color: #b154f0;
+  }
+  

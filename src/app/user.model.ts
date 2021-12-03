@@ -13,3 +13,12 @@ export class User{
             return this._token;
         }
 }
+export interface usersArray{
+    id?: string,
+    name: string,
+    email: string,
+    password: string,
+    photo?: string,
+    completedLevels?: number,
+    aboutUser?: string
+}

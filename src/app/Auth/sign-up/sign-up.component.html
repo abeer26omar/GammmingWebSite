@@ -41,6 +41,11 @@
                             <span *ngIf="password.errors?.['minlength']">Password Must be 8 characters at least</span>                           
                           </div>
                         </div>
+                        <div class="mb-3">
+                          <label class="form-label text-light" for="Describtion">Describtion</label>
+                          <input type="text" class="form-control" 
+                           ngModel  name="describtion" placeholder="Tell Us About You ?!" #description="ngModel">
+                        </div>
                         <div class="mb-3 mt-4">
                           <div class="form-check text-2">
                             <input id="agree" name="agree" class="form-check-input" 
