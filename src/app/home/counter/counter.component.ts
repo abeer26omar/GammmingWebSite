@@ -3,6 +3,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { APIResponse, Game } from 'src/app/model';
 import { HttpService } from 'src/app/services/http.service';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-counter',
@@ -10,7 +11,7 @@ import { HttpService } from 'src/app/services/http.service';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent implements OnInit {
-  streams: number = 0;
+  users: number = 0;
   twitch: number = 0;
   youtube: number = 0;
   team: number = 0;
@@ -22,7 +23,7 @@ export class CounterComponent implements OnInit {
   private gameSub: Subscription = new Subscription;
   constructor(private httpService: HttpService, 
     private route: ActivatedRoute,
-    private router: Router) { }
+    private user: UsersService) { }
 
   ngOnInit(): void {
     this.routeSub = this.route.params.subscribe((params: Params)=>{
@@ -31,6 +32,9 @@ export class CounterComponent implements OnInit {
       } else{
         this.searchGames('metacrit');
       }
+    })
+    this.user.getUsers().subscribe(result=>{
+      this.users = result.length;
     })
   }
   searchGames(sort: string, search?: string){

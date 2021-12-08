@@ -31,6 +31,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgwWowModule } from 'ngx-wow';
 
 
+
 //components
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';

@@ -1,5 +1,6 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { fromEvent, Observable } from 'rxjs';
+import { HasEventTargetAddRemove } from 'rxjs/internal/observable/fromEvent';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  
     windowScrolled = false;
+    
 
   constructor() { }
   
@@ -15,9 +18,11 @@ export class FooterComponent implements OnInit {
     window.addEventListener('scroll', () => {
         this.windowScrolled = window.pageYOffset !== 0;
       });
+
   }
   scrollToTop(): void {
-    window.scrollTo(0, 0);
-  }
-
+    // setTimeout(() => window.scroll(0, 0), 0);
+    // this.viewport.Scrol
+ }
+ 
 }

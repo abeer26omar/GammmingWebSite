@@ -170,3 +170,6 @@ figure {
   text-transform: uppercase;
   text-decoration: none;
 }
+.btn.btn-link:hover {
+  opacity: 0.8;
+}

@@ -33,14 +33,19 @@ export class UsersService {
     )
   }
   getOneUser(id: string){
-    // return this.http.get<Array<usersArray>>(`https://gamming-website-default-rtdb.firebaseio.com/users.json/${id}`, {
-    //   headers: new HttpHeaders({
-    //     'Access-Control-Allow-Origin': 'http://localhost:4200',
-    //     'Access-Control-Allow-Methods': 'DELETE, POST, GET, OPTIONS'
-    //     // 'Access-Control-Allow-Headers':'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With'
-    //   })
+    return this.http.get<Array<usersArray>>(`https://gamming-website-default-rtdb.firebaseio.com/users/${id}`, {
+      headers: new HttpHeaders({
+        // 'Access-Control-Allow-Origin': '*',
+        // 'Access-Control-Allow-Methods': 'DELETE, POST, GET, OPTIONS',
+        //  'mode': 'no-cors' 
+        // // 'Access-Control-Allow-Headers':'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With'
+      // 'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT'
+      })
       
-    // })
+    })
     
   }
 }

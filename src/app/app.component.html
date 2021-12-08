@@ -4,7 +4,6 @@
     </mat-drawer>
     <mat-drawer-content>
       <app-header (toggleSideBar)= "toggle()"></app-header>
-      <router-outlet (activate)="onActive()"></router-outlet>
+      <router-outlet (activate)="onActivate($event)"></router-outlet>
     </mat-drawer-content>
   </mat-drawer-container>
-  <!--*ngIf="router.url !== '/signup' && router.url !== '/signin'"-->
