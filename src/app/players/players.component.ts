@@ -20,7 +20,7 @@ export class PlayersComponent implements OnInit, OnDestroy {
     })
   }
   playerDetails(id: string){
-    this.router.navigate(['profile', id])
+    this.router.navigate(['commingsoon', id])
   }
  ngOnDestroy(){
    this.usersSub?.unsubscribe()

@@ -84,31 +84,55 @@
                     type specimen book centuries,</p>
             </div>
             <div class="contact-form">
-                <form class="row g-3">
+                <!-- <div class="lds-dual-ring" *ngIf="loadding"></div> -->
+                <div class="alert alert-success" *ngIf="f.submitted">Review Send Successfuly</div>
+                <form class="row g-3" (ngSubmit)="submit(f)" #f="ngForm">
                     <div class="col-md-6">
                         <input type="text" class="form-control mb-30" placeholder="Name" 
                         ngModel required name="name" #name="ngModel">
+                        <span class="text-danger"
+                                *ngIf="!name.valid && name.touched">
+                                Name is required
+                           </span>
                     </div>
                     <div class="col-md-6">
                         <input type="email" class="form-control mb-30" 
-                        ngModel required email name="email" placeholder="E-mail" #email="ngModel" >
+                        ngModel required email name="email" placeholder="E-mail" #email="ngModel">
+                        <div class="text-danger" *ngIf="email.invalid && email.touched">
+                            <span *ngIf="email.errors?.['required']">Email is required</span>
+                            <span *ngIf="email.errors?.['email']">Invaild Email Pattern</span>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <input type="tel" class="form-control mb-30" placeholder="Phone" 
                         ngModel required name="phone" #phone="ngModel">
+                        <span class="text-danger"
+                                *ngIf="!phone.valid && phone.touched">
+                                Phone is required
+                           </span>
                     </div>
                     <div class="col-md-6">
                         <input type="text" class="form-control mb-30" 
-                        ngModel required email name="Address" placeholder="Address" #Address="ngModel" >
+                        ngModel required  name="Address" placeholder="Address" #Address="ngModel" >
+                        <span class="text-danger"
+                                *ngIf="!Address.valid && Address.touched">
+                                Address is required
+                        </span>
                     </div>
                     <div class="col-12">
-                        <textarea class="form-control mb-50" placeholder="Write A review Here..." aria-label="With textarea"></textarea>
+                        <textarea class="form-control mb-50" placeholder="Write A review Here..." 
+                        aria-label="With textarea" ngModel required review name="review" #review="ngModel"></textarea>
+                        <span class="text-danger"
+                                *ngIf="!review.valid && review.touched">
+                                Review is required
+                           </span>
                     </div>
                     <div class="col-12 text-center">
-                        <button type="submit" class="btn btn-link" style="background-image: url(../../assets/images/btn-bg.webp);">Submit</button>
+                        <button type="submit" class="btn btn-link" style="background-image: url(../../assets/images/btn-bg.webp);" [disabled]="f.form.invalid">Submit</button>
                       </div>
                 </form>
             </div>
         </div>
     </div>
 </section>
+<app-footer></app-footer>

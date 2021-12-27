@@ -1,6 +1,5 @@
 export class User{
     constructor(
-        public name: string,
         public email: string, 
         public id: string, 
         private _token: string, 
@@ -18,7 +17,9 @@ export interface usersArray{
     name: string,
     email: string,
     password: string,
-    photo?: string,
-    completedLevels?: number,
-    aboutUser?: string
+    phone?:number,
+    avatar?: string,
+    description?: string,
+    city?: string,
+    country?: string
 }

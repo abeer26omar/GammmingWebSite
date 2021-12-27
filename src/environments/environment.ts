@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  base_url: 'https://api.rawg.io/api'
+  api_url: 'https://api.rawg.io/api'
+
 };
 
 /*

@@ -13,8 +13,8 @@ userId :string = '';
   userDetails: usersArray = {
     name:'',
     email:'',
-    password: '',
-    aboutUser: ''
+    password: ''
+    
   };
   constructor(private route: ActivatedRoute,private user: UsersService) { }
 

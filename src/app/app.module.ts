@@ -31,7 +31,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgwWowModule } from 'ngx-wow';
 
 
-
 //components
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
@@ -53,6 +52,7 @@ import { ProfileComponent } from './players/profile/profile.component';
 import { GamesComponent } from './home/pop-games/pop-games.component';
 import { ForgetPasswordComponent } from './Auth/forget-password/forget-password.component';
 import { ContactComponent } from './contact/contact.component';
+import { CommingSoonComponent } from './comming-soon/comming-soon.component';
 
 
 
@@ -77,8 +77,7 @@ import { ContactComponent } from './contact/contact.component';
     ProfileComponent,
     ForgetPasswordComponent,
     ContactComponent,
-    
-
+    CommingSoonComponent,
   ],
   imports: [
     BrowserModule,
@@ -104,7 +103,7 @@ import { ContactComponent } from './contact/contact.component';
     HttpClientModule,
     GaugeModule.forRoot(),
     ReactiveFormsModule,
-    NgwWowModule
+    NgwWowModule,
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

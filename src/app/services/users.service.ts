@@ -10,12 +10,16 @@ import { usersArray } from '../user.model';
 export class UsersService {
 
   constructor(private http: HttpClient) { }
-  saveUsers(name: string, email: string,password: string,description: string){
+  saveUsers(name: string, email: string,password: string,description: string,phone: number,country: string,city: string,avatar: string){
     return this.http.post('https://gamming-website-default-rtdb.firebaseio.com/users.json',{
       name: name,
       email: email,
       password: password,
-      description: description
+      description: description,
+      phone: phone,
+      country: country,
+      city: city,
+      avatar: avatar
     })
   }
   getUsers(){

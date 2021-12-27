@@ -1,6 +1,6 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, map, Subject, tap, throwError } from 'rxjs';
+import { BehaviorSubject, catchError, Subject, tap, throwError } from 'rxjs';
 import { User } from '../user.model';
 
 interface authResponse{
@@ -20,7 +20,7 @@ interface reset{
 })
 export class AuthService {
 
-  user = new Subject<User>()
+  user = new Subject<User>();
 
   constructor(private http: HttpClient) { }
   //SignUp
@@ -34,7 +34,7 @@ export class AuthService {
     .pipe(catchError(this.handelError), 
     
     tap(resData => {
-      this.handelAuth(resData.name,resData.email, resData.localId, resData.idToken, +resData.expiresIn)
+      this.handelAuth(resData.email, resData.localId, resData.idToken, +resData.expiresIn)
       localStorage.setItem('user', JSON.stringify(resData))
     }))
   }
@@ -49,7 +49,7 @@ export class AuthService {
     .pipe(catchError(this.handelError), 
 
     tap(resData => {
-      this.handelAuth(resData.name,resData.email, resData.localId, resData.idToken, +resData.expiresIn)
+      this.handelAuth(resData.email, resData.localId, resData.idToken, +resData.expiresIn)
     }))
   }
   //reset password
@@ -62,19 +62,12 @@ export class AuthService {
   }
   //logOut
   logOut(){
-    // const user = new User(
-    //   null, 
-    //   null,
-    //   null,
-    //   null);
-    // this.user.next(user)   
   }
 
-  private handelAuth(name: string,email: string, userId: string, token: string, expiresIn: number){
+  private handelAuth(email: string, userId: string, token: string, expiresIn: number){
     
     const experationDate = new Date(new Date().getTime() + expiresIn * 1000);
     const user = new User(
-      name,
       email, 
       userId,
       token,

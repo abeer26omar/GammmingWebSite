@@ -43,7 +43,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 search">
                         <form class="d-flex" #form="ngForm" (ngSubmit)="onSubmit()">
                             <input class="form-control" type="search" name="search" 
-                            placeholder="Search" aria-label="Search" [(ngModel)]="searchText">
+                                placeholder="Search" aria-label="Search" [(ngModel)]="searchText">
                             <button class="btn btn-outline-secondary" type="submit">Search</button>
                         </form>
                     </div>
@@ -54,7 +54,7 @@
                     <div class="alert alert-danger text-center" *ngIf="error">
                         {{error}}
                       </div>
-                    <div class="col-lg-4 col-md-6" *ngFor="let game of games | search: searchText">
+                    <div class="col-lg-4 col-md-6" *ngFor="let game of games |search: searchText">
                         <div class="gaming-thumb">
                             <a href="#">
                                 <img *ngIf="game.background_image" 

@@ -13,7 +13,7 @@ import { UsersService } from 'src/app/services/users.service';
 export class CounterComponent implements OnInit {
   users: number = 0;
   twitch: number = 0;
-  youtube: number = 0;
+  review: number = 0;
   team: number = 0;
 
   public sort: string ='';

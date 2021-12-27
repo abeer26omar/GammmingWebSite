@@ -5,11 +5,11 @@ import { GameDetailsComponent } from './all-games/game-details/game-details.comp
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PlayersComponent } from './players/players.component';
-import { ProfileComponent } from './players/profile/profile.component';
 import { SignUpComponent } from './Auth/sign-up/sign-up.component';
 import { SigninComponent } from './Auth/signin/signin.component';
 import { ForgetPasswordComponent } from './Auth/forget-password/forget-password.component';
 import { ContactComponent } from './contact/contact.component';
+import { CommingSoonComponent } from './comming-soon/comming-soon.component';
 const routes: Routes = [
   { path:'', redirectTo: 'home', pathMatch:'full'},
   { path:'home', component:HomeComponent, data:{ breadcrumb: 'home'}},
@@ -19,7 +19,9 @@ const routes: Routes = [
   { path:'signin', component:SigninComponent},
   { path:'forgetpassword', component: ForgetPasswordComponent},
   { path:'players', component:PlayersComponent, data:{ breadcrumb:'Players'}},
-  { path:'profile/:id', component:ProfileComponent, data:{ breadcrumb:'profile'}},
+  // { path:'profile/:id', component:ProfileComponent, data:{ breadcrumb:'profile'}},
+  { path:'commingsoon', component:CommingSoonComponent},
+  { path:'commingsoon/:id', component: CommingSoonComponent},
   { path:'contact', component: ContactComponent, data:{ breadcrumb:'contact'}},
   { path:'**', component:NotFoundComponent}
   

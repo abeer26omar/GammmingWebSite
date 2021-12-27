@@ -12,7 +12,7 @@ import { HttpService } from '../services/http.service';
 })
 export class AllGamesComponent implements OnInit{
   
- searchText: string = '';
+ searchText: any;
  public sort: string = '';
  public games: Array<Game> = [];
 
